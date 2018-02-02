@@ -9,8 +9,8 @@ function add() {
     document.getElementById("sum").innerHTML = sum;
 }
 
-var btn = document.getElementById("doneBtn");
-var txt = document.getElementById("congrats");
+var btn = document.querySelector("#doneBtn");
+var txt = document.querySelector("#congrats");
 
 if(btn) {
     btn.addEventListener('click', congrats);
