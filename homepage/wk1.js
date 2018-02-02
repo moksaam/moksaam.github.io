@@ -1,6 +1,5 @@
 
-var x = document.getElementById('num1').value;
-var y = document.getElementById('num2').value;
+
 
 var btn = document.querySelector("#sumBtton");
 var txt = document.querySelector("#congrats");
@@ -8,6 +7,8 @@ var txt = document.querySelector("#congrats");
 btn.addEventListener('click', add);
 
 function add() {
+    var x = document.getElementById('num1').value;
+    var y = document.getElementById('num2').value;
     var sum;
     if (x == null || y == null) {
         txt.value = "Null values detected!";
