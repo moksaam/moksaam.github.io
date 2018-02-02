@@ -5,14 +5,12 @@ function add() {
     var sum;
 
     if (x == null) {
-        x = 0;
-    }
-
-    if (y == null) {
-        y = 0;
-    }
-
-    sum = parseInt(x) + parseInt(y);
+        sum = parseInt(y);
+    }else if (y == null) {
+        sum = parseInt(x);
+    } else {
+        sum = parseInt(x) + parseInt(y);
+    }  
 
     document.getElementById("sum").innerHTML = sum;
 }
