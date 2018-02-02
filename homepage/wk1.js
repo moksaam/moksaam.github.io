@@ -6,8 +6,11 @@ if(btn) {
     btn.addEventListener('click', congrats);
 }
 
-function add(x, y) {
-    sum = x + y;
+function add() {
+    var x = document.getElementById('num1').value;
+    var y = document.getElementById('num2').value;
+
+    sum = parseInt(x) + parseInt(y);
     return sum;  
 }
 
