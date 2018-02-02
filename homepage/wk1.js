@@ -1,30 +1,28 @@
 
-
+var x = document.getElementById('num1').value;
+var y = document.getElementById('num2').value;
 
 var btn = document.querySelector("#sumBtton");
 var txt = document.querySelector("#congrats");
 
+btn.addEventListener('click', congrats);
 
-
-function add() {
-    var x = document.getElementById('num1').value;
-    var y = document.getElementById('num2').value;
+function add(x, y) {
     var sum;
     if (x == null || y == null) {
         txt.value = "Null values detected!";
     } else {        
         sum = x + y;
     }
+    return sum;  
+}
 
-    if (btn.value == "Click to add!") {
-        btn.value = sum;
+function congrats() {
+    if (btn.value == "Click Here") {
         txt.value = "Congratulations, you know maths!";
     }
     else {
-        btn.value = "Click to add!";
+        btn.value = "Click Here";
         txt.value = "Can you maths?"
     }
-    
 }
-
-btn.addEventListener('click', add);
