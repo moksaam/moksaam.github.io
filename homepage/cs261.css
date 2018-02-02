@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(226, 230, 243);
+    background-color: rgb(238, 242, 255);
 }
 
 h1 {
     text-align: center;
-    color: tomato;
+    color: rgb(33, 27, 119);
 }
 
 ul {
@@ -18,5 +18,5 @@ a {
 }
 
 a:hover {
-    color: slateblue;
+    color: rgb(76, 66, 146);
 }
