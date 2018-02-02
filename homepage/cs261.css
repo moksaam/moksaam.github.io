@@ -8,6 +8,12 @@ h1 {
     color: rgb(33, 27, 119);
 }
 
+h2 {
+    color: tomato;
+    text-align: center;
+    font-size: 3em;
+}
+
 ul {
     list-style-type: none;
     text-align: center;
