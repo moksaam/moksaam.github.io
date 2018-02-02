@@ -8,7 +8,13 @@ var txt = document.querySelector("#congrats");
 btn.addEventListener('click', add(x, y));
 
 function add(x, y) {
-    var sum = x + y;
+    var sum;
+    if (x == null || y == null) {
+        txt.value = "Null values detected!";
+    } else {        
+        sum = x + y;
+    }
+
     if (btn.value == "Click to add!") {
         btn.value = sum;
         txt.value = "Congratulations, you know maths!";
