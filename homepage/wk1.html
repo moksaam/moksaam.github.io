@@ -3,6 +3,7 @@
     <head>
         <title>CS 261 Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</title>
         <script language="javascript" src="wk1.js"></script>
+        <link rel="stylesheet" href="cs261.css">
     </head>
     
     <body>
@@ -12,7 +13,7 @@
             </ul>
         </div>
         <h2>Here are some examples of using Javascript</h2>
-        <div id="example1" class="example">Using a function
+        <div id="example1" class="example"><h3>Using a function</h3>
             <p>This function will take these two inputs add them together</p>
             <p>X = <input id="num1" type="number" value=""></p>
             <p>Y = <input id="num2" type="number" value=""></p><br>
@@ -23,9 +24,13 @@
             <p>Finished yet?</p>
             <p id="congrats"></p>
             </div>
-        <div id="example2" class="example">Using a for loop
-            <p>We will take a list of items and loop through them to count how many we have.</p>
-
+        <div id="example2" class="example"><h3>Using a while loop</h3>
+            <p>Let's play a game!  Can you guess the number that I am thinking?</p><br>
+            <p>You have 7 chances.</p>
+            <span id="randomNumber"></span>
+            <br><br>
+            <input type="number" min="1" max="100" maxlength="3">
+            <input type="button" onclick="" value="Check!">
         </div>
     </body>
 

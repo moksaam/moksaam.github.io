@@ -21,3 +21,9 @@ a {
 a:hover {
     color: rgb(76, 66, 146);
 }
+
+div.example {
+    text-align: center;
+    color: wheat;
+    background: gray;
+}
