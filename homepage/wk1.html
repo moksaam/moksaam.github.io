@@ -32,7 +32,11 @@
             <span id="randomNumber"></span>
             <br>
             <label for="guess">Your Guess:</label><input id="guess" type="text" min="1" max="100" maxlength="3" size="3">
-            <input type="button" onclick="" value="Check!">
+            <input type="button" id="checkBtn" value="Check!">
+            <fieldset id="guesses" class="guesses">
+                <legend> Guesses </legend>
+                <textarea id="output" name="output" rows="5" style="width: 50%;"></textarea>
+            </fieldset>
         </div>
     </body>
 

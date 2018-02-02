@@ -27,26 +27,34 @@ function congrats() {
     }
 }
 
-var gameAnswer = Math.floor((Math.random() * 100) + 1);
+
 var count = 0;
 var turns = 7;
 
-function makeGuess() {
-
+document.getElementById("checkBtn").onclick = function () {
     var userGuess = document.getElementById("guess").value;
+    makeGuess(userGuess);
+    count++;
 
-    while (count != turns) {
-        if (userGuess > gameAnswer) {
-            var lower = document.getElementById("answer")
-            lower.innerHTML = "Lower";
-        } else if (count < gameAnswer) {
-            var higher = document.getElementById("answer")
-            higher.innerHTML = "Higher";
-        } else {
-            var correct = document.getElementById("answer")
-            correct.innerHTML = "Good Job!! You guessed correctly!";
-        }
-        count++;
+    if (count == turns) {
+        alert("Game Over!");
+        document.getElementById("checkBtn").disabled = true;
+    }
+}
+
+function generateNumber() {
+    var gameAnswer = Math.floor((Math.random() * 100) + 1);
+}
+
+function makeGuess(userGuess) {
+    var guesses = document.getElementById("guesses");
+
+    if (userGuess > gameAnswer) {
+        guesses.value = guesses.value + "\r" + "Lower!"
+    } else if (count < gameAnswer) {
+        guesses.value = guesses.value + "\r" + "Higher!"
+    } else {
+        guesses.value = guesses.value + "\r" + "You got it right!"
     }
 }
 
