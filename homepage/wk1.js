@@ -5,7 +5,7 @@ var y = document.getElementById('num2').value;
 var btn = document.querySelector("#sumBtton");
 var txt = document.querySelector("#congrats");
 
-btn.addEventListener('click', add);
+btn.addEventListener('click', add(x, y));
 
 function add(x, y) {
     var sum = x + y;
