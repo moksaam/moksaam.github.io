@@ -3,12 +3,12 @@ function add() {
     var x = document.getElementById('num1').value;
     var y = document.getElementById('num2').value;
     var sum;
-    
-    if (x == null && y != null) {
+
+    if (x == null) {
         x = 0;
     }
 
-    if (y == null && x != null) {
+    if (y == null) {
         y = 0;
     }
 
