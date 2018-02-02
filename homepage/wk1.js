@@ -1,7 +1,7 @@
 
 var btn = document.querySelector("#doneBtn");
 var txt = document.querySelector("#congrats");
-var sum;
+
 if(btn) {
     btn.addEventListener('click', congrats);
 }
@@ -9,14 +9,13 @@ if(btn) {
 function add() {
     var x = document.getElementById('num1').value;
     var y = document.getElementById('num2').value;
-
+    var sum;
+    
     sum = parseInt(x) + parseInt(y);
-    return sum;  
-}
 
-if(sum) {
     document.getElementById("sum").innerHTML = sum;
 }
+
 
 function congrats() {
     if (btn.value == "Click Here") {
