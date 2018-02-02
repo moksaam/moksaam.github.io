@@ -11,8 +11,9 @@ function add(x, y) {
     sum = x + y;
     return sum;  
 }
-
-document.getElementById("sum").innerHTML = sum;
+if(sum) {
+    document.getElementById("sum").innerHTML = sum;
+}
 
 function congrats() {
     if (btn.value == "Click Here") {
