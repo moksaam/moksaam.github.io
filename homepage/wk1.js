@@ -9,36 +9,39 @@ function add() {
     document.getElementById("sum").innerHTML = sum;
 }
 
-var btn = document.querySelector("#doneBtn");
-var txt = document.querySelector("#congrats");
+window.onload = function () {
+    var btn = document.querySelector("#doneBtn");
+    var txt = document.querySelector("#congrats");
 
-if(btn) {
-    btn.addEventListener('click', congrats);
-}
+    if(btn) {
+        btn.addEventListener('click', congrats);
+    }
 
-function congrats() {
+    function congrats() {
 
-    if (btn.value === "Click Here") {
-        btn.value = "Clicked!";
-        txt.textContent = "Congratulations, you know maths!";
-    } else {
-        btn.value = "Click Here";
-        txt.textContent = "Can you maths?"
+        if (btn.value === "Click Here") {
+            btn.value = "Clicked!";
+            txt.textContent = "Congratulations, you know maths!";
+        } else {
+            btn.value = "Click Here";
+            txt.textContent = "Can you maths?"
+        }
     }
 }
-
 
 var count = 0;
 var turns = 7;
 
-document.getElementById("checkBtn").onclick = function () {
-    var userGuess = document.getElementById("guess").value;
-    makeGuess(userGuess);
-    count++;
+window.onload = function () {
+    document.getElementById("checkBtn").onclick = function () {
+        var userGuess = document.getElementById("guess").value;
+        makeGuess(userGuess);
+        count++;
 
-    if (count == turns) {
-        alert("Game Over!");
-        document.getElementById("checkBtn").disabled = true;
+        if (count == turns) {
+            alert("Game Over!");
+            document.getElementById("checkBtn").disabled = true;
+        }
     }
 }
 
@@ -61,5 +64,4 @@ function makeGuess(userGuess) {
 function showNumber() {
     var numberDisplay = document.getElementById("randomNumber")
     numberDisplay.innerHTML = gameAnswer;
-
 }
