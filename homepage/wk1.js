@@ -2,7 +2,7 @@
 var x = document.getElementById('num1').value;
 var y = document.getElementById('num2').value;
 
-var btn = document.querySelector("#sumBtton");
+var btn = document.querySelector("#doneBtn");
 var txt = document.querySelector("#congrats");
 
 btn.addEventListener('click', congrats);
