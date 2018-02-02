@@ -4,7 +4,7 @@
 var btn = document.querySelector("#sumBtton");
 var txt = document.querySelector("#congrats");
 
-btn.addEventListener('click', add);
+
 
 function add() {
     var x = document.getElementById('num1').value;
@@ -26,3 +26,5 @@ function add() {
     }
     
 }
+
+btn.addEventListener('click', add);
