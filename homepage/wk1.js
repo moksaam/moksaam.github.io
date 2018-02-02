@@ -17,10 +17,10 @@ if(sum) {
 
 function congrats() {
     if (btn.value == "Click Here") {
-        txt.value = "Congratulations, you know maths!";
+        txt.textContent = "Congratulations, you know maths!";
     }
     else {
         btn.value = "Click Here";
-        txt.value = "Can you maths?"
+        txt.textContent = "Can you maths?"
     }
 }
