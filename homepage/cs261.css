@@ -1,0 +1,12 @@
+body {
+    background-color: powderblue;
+}
+
+li {
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    color: slateblue;
+}
