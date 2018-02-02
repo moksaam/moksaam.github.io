@@ -18,7 +18,7 @@ if(btn) {
 
 function congrats() {
 
-    if (btn.value == "Click Here") {
+    if (btn.value === "Click Here") {
         btn.value = "Clicked!";
         txt.textContent = "Congratulations, you know maths!";
     } else {
