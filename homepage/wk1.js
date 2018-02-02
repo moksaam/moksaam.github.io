@@ -4,11 +4,11 @@ function add() {
     var y = document.getElementById('num2').value;
     var sum;
 
-    if (x == null && y == null) {
+    if (x === null && y === null) {
         sum = 0;
-    } else if (x == null) {
+    } else if (x === null) {
         sum = parseInt(y);
-    } else if (y == null) {
+    } else if (y === null) {
         sum = parseInt(x);
     } else {
         sum = parseInt(x) + parseInt(y);
