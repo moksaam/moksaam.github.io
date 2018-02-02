@@ -50,11 +50,11 @@ function makeGuess(userGuess) {
     var guesses = document.getElementById("guesses");
 
     if (userGuess > gameAnswer) {
-        guesses.value = guesses.value + "\r" + "Lower!"
+        guesses.value = guesses.value + "\r" + "Lower!";
     } else if (count < gameAnswer) {
-        guesses.value = guesses.value + "\r" + "Higher!"
+        guesses.value = guesses.value + "\r" + "Higher!";
     } else {
-        guesses.value = guesses.value + "\r" + "You got it right!"
+        guesses.value = guesses.value + "\r" + "You got it right!";
     }
 }
 
