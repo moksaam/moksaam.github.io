@@ -1,11 +1,3 @@
-
-var btn = document.querySelector("#doneBtn");
-var txt = document.querySelector("#congrats");
-
-if(btn) {
-    btn.addEventListener('click', congrats);
-}
-
 function add() {
     var x = document.getElementById('num1').value;
     var y = document.getElementById('num2').value;
@@ -13,11 +5,18 @@ function add() {
 
     sum = parseInt(x) + parseInt(y);
 
-    document.getElementById("sum").innerHTML = x, " + ", y, " = ", sum;
+    document.getElementById("sum").innerHTML = sum;
 }
 
+var btn = document.getElementById("doneBtn");
+var txt = document.getElementById("congrats");
+
+if(btn) {
+    btn.addEventListener('click', congrats);
+}
 
 function congrats() {
+
     if (btn.value == "Click Here") {
         txt.textContent = "Congratulations, you know maths!";
     }
