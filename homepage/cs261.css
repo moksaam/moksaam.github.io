@@ -1,8 +1,18 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(226, 230, 243);
 }
 
-li, a {
+h1 {
+    text-align: center;
+    color: tomato;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+a {
     color: tomato;
     text-decoration: none;
 }
