@@ -47,7 +47,7 @@ window.onload = function () {
 }
 
 function makeGuess(userGuess) {
-    var guesses = document.getElementById("guesses");
+    var guesses = document.getElementById("output");
 
     if (userGuess > gameAnswer) {
         guesses.value = guesses.value + "\r" + "Lower!";
