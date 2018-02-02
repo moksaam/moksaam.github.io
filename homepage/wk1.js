@@ -5,9 +5,9 @@ var y = document.getElementById('num2').value;
 var btn = document.querySelector("#sumBtton");
 var txt = document.querySelector("#congrats");
 
-btn.addEventListener('click', add(x, y));
+btn.addEventListener('click', add);
 
-function add(x, y) {
+function add() {
     var sum;
     if (x == null || y == null) {
         txt.value = "Null values detected!";
