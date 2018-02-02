@@ -1,7 +1,16 @@
 function add() {
+    
     var x = document.getElementById('num1').value;
     var y = document.getElementById('num2').value;
     var sum;
+    
+    if (x == null && y != null) {
+        x = 0;
+    }
+
+    if (y == null && x != null) {
+        y = 0;
+    }
 
     sum = parseInt(x) + parseInt(y);
 
