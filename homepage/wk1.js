@@ -29,6 +29,7 @@ window.onload = function () {
     }
 }
 
+var gameAnswer = Math.floor((Math.random() * 100) + 1);
 var count = 0;
 var turns = 7;
 
@@ -43,10 +44,6 @@ window.onload = function () {
             document.getElementById("checkBtn").disabled = true;
         }
     }
-}
-
-function generateNumber() {
-    var gameAnswer = Math.floor((Math.random() * 100) + 1);
 }
 
 function makeGuess(userGuess) {
