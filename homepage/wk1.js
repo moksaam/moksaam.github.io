@@ -2,8 +2,10 @@
 var btn = document.querySelector("#doneBtn");
 var txt = document.querySelector("#congrats");
 var sum;
+if(btn) {
+    btn.addEventListener('click', congrats);
+}
 
-btn.addEventListener('click', congrats);
 
 function add(x, y) {
     sum = x + y;
