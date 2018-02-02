@@ -2,7 +2,7 @@ body {
     background-color: powderblue;
 }
 
-li {
+li, a {
     color: tomato;
     text-decoration: none;
 }
