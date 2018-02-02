@@ -26,3 +26,32 @@ function congrats() {
         txt.textContent = "Can you maths?"
     }
 }
+
+var gameAnswer = Math.floor((Math.random() * 100) + 1);
+var count = 0;
+var turns = 7;
+
+function makeGuess() {
+
+    var userGuess = document.getElementById("guess").value;
+
+    while (count != turns) {
+        if (userGuess > gameAnswer) {
+            var lower = document.getElementById("answer")
+            lower.innerHTML = "Lower";
+        } else if (count < gameAnswer) {
+            var higher = document.getElementById("answer")
+            higher.innerHTML = "Higher";
+        } else {
+            var correct = document.getElementById("answer")
+            correct.innerHTML = "Good Job!! You guessed correctly!";
+        }
+        count++;
+    }
+}
+
+function showNumber() {
+    var numberDisplay = document.getElementById("randomNumber")
+    numberDisplay.innerHTML = gameAnswer;
+
+}
