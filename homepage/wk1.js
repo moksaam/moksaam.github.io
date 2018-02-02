@@ -10,10 +10,10 @@ function add() {
     var x = document.getElementById('num1').value;
     var y = document.getElementById('num2').value;
     var sum;
-    
+
     sum = parseInt(x) + parseInt(y);
 
-    document.getElementById("sum").innerHTML = sum;
+    document.getElementById("sum").innerHTML = x, " + ", y, " = ", sum;
 }
 
 
