@@ -4,15 +4,7 @@ function add() {
     var y = document.getElementById('num2').value;
     var sum;
 
-    if (x === null && y === null) {
-        sum = 0;
-    } else if (x === null) {
-        sum = parseInt(y);
-    } else if (y === null) {
-        sum = parseInt(x);
-    } else {
-        sum = parseInt(x) + parseInt(y);
-    }  
+    sum = parseInt(x) + parseInt(y);
 
     document.getElementById("sum").innerHTML = sum;
 }
