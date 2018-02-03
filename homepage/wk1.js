@@ -10,21 +10,19 @@ function add() {
 }
 
 window.onload = function () {
-    var btn = document.getElementById("doneBtn");
+    var btn = document.getElementById("doneBtn").value;
     var txt = document.getElementById("congrats");
     
-    btn.addEventListener('click', updateBtn);
-   
-    function updateBtn() {
+    btn.addEventListener('click', function () {
 
-        if (btn.value === 'Click Here') {
-            btn.value = "Clicked!";
+        if (btn === 'Click Here') {
+            btn = "Clicked!";
             txt.innerHTML = "Congratulations, you know maths!";
         } else {
-            btn.value = 'Click Here';
+            btn = 'Click Here';
             txt.innerHTML = "Can you maths?"
         }
-    }
+    });
 }
 
 var gameAnswer = Math.floor((Math.random() * 100) + 1);
