@@ -1,19 +1,6 @@
-var btn = document.getElementById("doneBtn");
-var txt = document.getElementById("congrats");
-
-function add() {
-    
-    var x = document.getElementById('num1').value;
-    var y = document.getElementById('num2').value;
-    var sum;
-
-    sum = parseInt(x) + parseInt(y);
-
-    document.getElementById("sum").innerHTML = sum;
-}
-
-
 window.onload = function () {
+    var btn = document.getElementById("doneBtn");
+    var txt = document.getElementById("congrats");
     btn.addEventListener('click', function () {
 
         if (btn.value === 'Click Here') {
@@ -24,6 +11,17 @@ window.onload = function () {
             txt.innerHTML = "Can you maths?"
         }
     });
+}
+
+function add() {
+    
+    var x = document.getElementById('num1').value;
+    var y = document.getElementById('num2').value;
+    var sum;
+
+    sum = parseInt(x) + parseInt(y);
+
+    document.getElementById("sum").innerHTML = sum;
 }
 
 var gameAnswer = Math.floor((Math.random() * 100) + 1);
