@@ -10,21 +10,19 @@ function add() {
 }
 
 window.onload = function () {
-    var btn = document.querySelector("#doneBtn");
-    var txt = document.querySelector("#congrats");
-
-    if(btn) {
-        btn.addEventListener('click', congrats);
-    }
-
+    var btn = document.getElementById("doneBtn");
+    var txt = document.getElementById("congrats");
+    
+    btn.addEventListener('click', congrats);
+   
     function congrats() {
 
         if (btn.value === "Click Here") {
             btn.value = "Clicked!";
-            txt.textContent = "Congratulations, you know maths!";
+            txt.innerHTML = "Congratulations, you know maths!";
         } else {
             btn.value = "Click Here";
-            txt.textContent = "Can you maths?"
+            txt.innerHTML = "Can you maths?"
         }
     }
 }
@@ -50,11 +48,11 @@ function makeGuess(userGuess) {
     var guesses = document.getElementById("output");
 
     if (userGuess > gameAnswer) {
-        guesses.value = guesses.value + "\r" + "Lower!";
+        guesses.value = guesses.value + "\r" + "Lower! (" + userGuess + ")";
     } else if (count < gameAnswer) {
-        guesses.value = guesses.value + "\r" + "Higher!";
+        guesses.value = guesses.value + "\r" + "Higher! (" + userGuess + ")";
     } else {
-        guesses.value = guesses.value + "\r" + "You got it right!";
+        guesses.value = guesses.value + "\r" + "You got it right! (" + gameAnswer + ")";
     }
 }
 
@@ -67,5 +65,5 @@ function playAgain(yesPlease) {
 
     guesses.value = '';
     gameAnswer = Math.floor((Math.random() * 100) + 1);
-    guesses.value = "Game on!! You have seven chances to guess my number!\n";
+    guesses.value = "Game on!! You have 7 chances to guess my number!\n";
 }
