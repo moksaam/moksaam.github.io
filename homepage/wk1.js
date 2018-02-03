@@ -40,7 +40,7 @@ window.onload = function () {
         count++;
 
         if (count == turns) {
-            alert("Game Over!");
+            alert("Game Over! The answer was " + gameAnswer);
             document.getElementById("checkBtn").disabled = true;
         }
     }
