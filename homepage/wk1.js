@@ -1,3 +1,6 @@
+var btn = document.getElementById("doneBtn");
+var txt = document.getElementById("congrats");
+
 function add() {
     
     var x = document.getElementById('num1').value;
@@ -9,8 +12,7 @@ function add() {
     document.getElementById("sum").innerHTML = sum;
 }
 
-var btn = document.getElementById("doneBtn");
-var txt = document.getElementById("congrats");
+
 window.onload = function () {
     btn.addEventListener('click', function () {
 
