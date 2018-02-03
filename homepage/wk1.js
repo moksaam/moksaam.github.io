@@ -13,15 +13,15 @@ window.onload = function () {
     var btn = document.getElementById("doneBtn");
     var txt = document.getElementById("congrats");
     
-    btn.addEventListener('click', congrats);
+    btn.addEventListener('click', updateBtn);
    
-    function congrats() {
+    function updateBtn() {
 
-        if (btn.value === "Click Here") {
+        if (btn.value === 'Click Here') {
             btn.value = "Clicked!";
             txt.innerHTML = "Congratulations, you know maths!";
         } else {
-            btn.value = "Click Here";
+            btn.value = 'Click Here';
             txt.innerHTML = "Can you maths?"
         }
     }
