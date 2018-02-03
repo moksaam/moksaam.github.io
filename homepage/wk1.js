@@ -58,7 +58,14 @@ function makeGuess(userGuess) {
     }
 }
 
-function showNumber() {
-    var numberDisplay = document.getElementById("randomNumber")
-    numberDisplay.innerHTML = gameAnswer;
+function playAgain(yesPlease) {
+    var guesses = document.getElementById("output");
+    
+    if (yesPlease && !confirm('Would you like to play again?')) {
+        return;
+    }
+
+    guesses.value = '';
+    gameAnswer = Math.floor((Math.random() * 100) + 1);
+    guesses.value = "Game on!! You have seven chances to guess my number!\n";
 }
