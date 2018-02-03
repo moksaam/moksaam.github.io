@@ -9,17 +9,16 @@ function add() {
     document.getElementById("sum").innerHTML = sum;
 }
 
+var btn = document.getElementById("doneBtn");
+var txt = document.getElementById("congrats");
 window.onload = function () {
-    var btn = document.getElementById("doneBtn").value;
-    var txt = document.getElementById("congrats");
-    
     btn.addEventListener('click', function () {
 
-        if (btn === 'Click Here') {
-            btn = "Clicked!";
+        if (btn.value === 'Click Here') {
+            btn.value = "Clicked!";
             txt.innerHTML = "Congratulations, you know maths!";
         } else {
-            btn = 'Click Here';
+            btn.value = 'Click Here';
             txt.innerHTML = "Can you maths?"
         }
     });
