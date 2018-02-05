@@ -73,3 +73,4 @@ function playAgain(yesPlease) {
     chancesLeft.innerHTML = "You have " + chances + " chances.";
     
 }
+
