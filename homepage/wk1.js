@@ -34,7 +34,10 @@ window.onload = function () {
     document.getElementById("checkBtn").onclick = function () {
         var userGuess = document.getElementById("guess").value;
         makeGuess(userGuess);
+        var chancesLeft = document.getElementById("chances");
+        chancesLeft.innerHTML = "You have " + count + " chances left."
         count++;
+        
 
         if (count == turns) {
             alert("Game Over! The answer was " + gameAnswer);
