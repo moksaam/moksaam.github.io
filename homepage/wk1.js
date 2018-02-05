@@ -50,7 +50,7 @@ function makeGuess(userGuess) {
 
     if (userGuess == gameAnswer) {
         guesses.value = guesses.value + "\r" + "You got it right! (" + gameAnswer + ")";
-    } else if (count < gameAnswer) {
+    } else if (userGuess < gameAnswer) {
         guesses.value = guesses.value + "\r" + "Higher! (" + userGuess + ")";
     } else {
         guesses.value = guesses.value + "\r" + "Lower! (" + userGuess + ")";
