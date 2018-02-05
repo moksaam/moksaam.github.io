@@ -48,12 +48,12 @@ window.onload = function () {
 function makeGuess(userGuess) {
     var guesses = document.getElementById("output");
 
-    if (userGuess > gameAnswer) {
-        guesses.value = guesses.value + "\r" + "Lower! (" + userGuess + ")";
+    if (userGuess == gameAnswer) {
+        guesses.value = guesses.value + "\r" + "You got it right! (" + gameAnswer + ")";
     } else if (count < gameAnswer) {
         guesses.value = guesses.value + "\r" + "Higher! (" + userGuess + ")";
     } else {
-        guesses.value = guesses.value + "\r" + "You got it right! (" + gameAnswer + ")";
+        guesses.value = guesses.value + "\r" + "Lower! (" + userGuess + ")";
     }
 }
 
