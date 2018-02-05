@@ -79,5 +79,9 @@ div.dropDownMenu a:hover {
 }
 
 .menuBtn:hover, .menuBtn:focus {
+    background-color: azure;
+}
 
+.show {
+    display: block;
 }
