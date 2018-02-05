@@ -27,17 +27,17 @@ function add() {
 var gameAnswer = Math.floor((Math.random() * 100) + 1);
 var count = 0;
 var turns = 7;
-var chances = 6;
+var chances = 7;
 var chancesLeft = document.getElementById("chances");
 
 window.onload = function () {
     document.getElementById("checkBtn").onclick = function () {
         var userGuess = document.getElementById("guess").value;
         makeGuess(userGuess);
+        chances--;
         chancesLeft.innerHTML = "You have " + chances + " chances left."
         count++;
-        chances--;
-
+        
         if (count == turns) {
             alert("Game Over! The answer was " + gameAnswer);
             document.getElementById("checkBtn").disabled = true;
