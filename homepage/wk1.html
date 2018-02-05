@@ -34,11 +34,12 @@
             <br>
             <label for="guess">Your Guess:</label><input id="guess" type="text" min="1" max="100" maxlength="3" size="3">
             <input type="button" id="checkBtn" value="Check!">
+            <input type="button" onclick="playAgain(true)" value="Play Again?">
             <fieldset id="guesses" class="guesses">
                 <legend> Guesses </legend>
                 <textarea id="output" name="output" rows="10" style="width: 75%;"></textarea>
             </fieldset>
-            <input type="button" onclick="playAgain(true)" value="Play Again?"><br>
+            <br>
         </div>
         <script language="javascript" src="wk1.js"></script>
     </body>

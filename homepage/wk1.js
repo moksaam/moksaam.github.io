@@ -67,4 +67,5 @@ function playAgain(yesPlease) {
     guesses.value = '';
     gameAnswer = Math.floor((Math.random() * 100) + 1);
     guesses.value = "Game on!! You have 7 chances to guess my number!\n";
+    chancesLeft.innerHTML = "You have 7 chances."
 }
