@@ -1,16 +1,20 @@
 window.onload = function () {
-    var btn = document.getElementById("doneBtn");
-    var txt = document.getElementById("congrats");
-    btn.addEventListener('click', function () {
+    function showMenu() {
+        document.getElementById("exampleDropDown").classList.toggle("show");
+    }
+}
 
-        if (btn.value === 'Click Here') {
-            btn.value = "Clicked!";
-            txt.innerHTML = "Congratulations, you know maths!";
-        } else {
-            btn.value = 'Click Here';
-            txt.innerHTML = "Can you maths?"
+window.onclick = function() {
+    if (!event.target.matches('.menuBtn')) {
+        var dropdown = document.getElementsByClassName("drpdwncontent");
+        var index;
+        for (index = 0; index < dropdown.length; index++) {
+            var showDropdown = dropdown[index];
+            if (showDropdown.classList.contains('show')) {
+                showDropdown.classList.remove('show');
+            }
         }
-    });
+    }
 }
 
 function add() {
