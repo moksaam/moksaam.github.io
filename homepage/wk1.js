@@ -1,8 +1,8 @@
-window.onload = function () {
+
     function showMenu() {
         document.getElementById("exampleDropDown").classList.toggle("show");
     }
-}
+
 
 window.onclick = function(event) {
     if (!event.target.matches('.menuBtn')) {
