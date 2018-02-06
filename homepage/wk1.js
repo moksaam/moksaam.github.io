@@ -4,7 +4,7 @@ window.onload = function () {
     }
 }
 
-window.onclick = function() {
+window.onclick = function(event) {
     if (!event.target.matches('.menuBtn')) {
         var dropdown = document.getElementsByClassName("drpdwncontent");
         var index;
