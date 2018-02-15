@@ -49,13 +49,13 @@ div.dropDownMenu {
 }
 
 div.dropDownMenu a:hover {
-    background-color: rosybrown;
+    background-color: wheat;
 }
 
 .dropDownMenu-content {
     display: none;
     position: absolute;
-    background-color: antiquewhite;
+    background-color: rgb(76, 66, 146);
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.2);
@@ -63,7 +63,7 @@ div.dropDownMenu a:hover {
 }
 
 .dropDownMenu-content a {
-    color: teal;
+    color: tomato;
     padding: 6px 8px;
     text-decoration: none;
     display: block;
