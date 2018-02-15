@@ -11,7 +11,7 @@ document.getElementById("arrayBtn").onclick = function addToArray() {
         console.log("Added " + arrayInput.value + " to array.")
     }
     
-    arrayInput.value = 0;
+    arrayInput.value = '';
     return numberArray;
 }
 
@@ -23,6 +23,6 @@ document.getElementById("displayArray").onclick = function displayArray() {
     var output = document.getElementById("output_array");
     var count = 0;
     for (count; count < numberArray.length; count++) {
-        output.value += guess.value + numberArray[count];
+        output.value += output.value + numberArray[count];
     }
 }
