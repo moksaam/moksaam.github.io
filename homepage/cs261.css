@@ -25,11 +25,26 @@ ul {
     text-align: center;
 }
 
-a {
+a.nav_btns {
     color: wheat;
     text-decoration: none;
     background-color: grey;
     padding: 6px 8px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+a.nav_btns:hover {
+    color: rgb(76, 66, 146);
+}
+
+
+a {
+    color: tomato;
+    text-align: left;
+    text-decoration: none;
+    padding: 6px 12px;
     font-size: 1.5em;
     border: none;
     cursor: pointer;
