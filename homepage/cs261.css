@@ -86,10 +86,14 @@ div.dropDownMenu a:hover {
     display: block;
 }
 
-.output { 
+#output { 
     width: 75%;
 }
 
-.output_array {
+.output {
+    text-align: center;
+}
+
+#output_array {
     width: 35%;
 }
