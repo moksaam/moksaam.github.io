@@ -19,7 +19,7 @@ document.getElementById("displayArray").onclick = function displayArray(numberAr
     if (numberArray == 0) {
         alert("The array is empty");
     }
-    console.log(toString(numberArray));
+    console.log(numberArray.join());
     var output = document.getElementById("output_array");
     var count = 0;
     for (count; count < numberArray.length; count++) {
