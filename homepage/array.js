@@ -1,7 +1,7 @@
 var numberArray = [];
 var arrayInput = document.getElementById("input_array");
 
-document.getElementById("arrayBtn").onclick = function addToArray() {
+document.getElementById("pushArrayBtn").onclick = function addToArray() {
     
     if (arrayInput.value == null) {
         console.log("empty input");
@@ -17,7 +17,7 @@ document.getElementById("arrayBtn").onclick = function addToArray() {
     return numberArray;
 }
 
-document.getElementById("displayArray").onclick = function displayArray() {
+document.getElementById("displayArrayBtn").onclick = function displayArray() {
     if (numberArray == 0) {
         alert("The array is empty");
     }
@@ -30,7 +30,20 @@ document.getElementById("displayArray").onclick = function displayArray() {
     }
 }
 
-document.getElementById("resetField").onclick = function resetArray() {
+document.getElementById("popArrayBtn").onlcick = function popOffArray() {
+    if (arrayInput.value == null) {
+        console.log("empty input");
+        return;
+    } else {
+        var count = 0;
+        for (count; count < numberArray.length; count--) {
+            numberArray.pop();
+            console.log("Removed value from array");
+        }
+    }
+}
+
+document.getElementById("resetFieldBtn").onclick = function resetArray() {
     var output = document.getElementById("output_array");
     output.value = '';
     numberArray.length = 0;
