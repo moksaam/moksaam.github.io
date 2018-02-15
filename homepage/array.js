@@ -3,12 +3,14 @@ var arrayInput = document.getElementById("input_array");
 
 document.getElementById("arrayBtn").onclick = function addToArray() {
     
-    if (arrayInput == null) {
+    if (arrayInput.value == null) {
         console.log("empty input");
         return;
+    } else if (arrayInput.value == '') {
+        alert("Please enter a value!");
     } else {
         numberArray.push(arrayInput.value);
-        console.log("Added " + arrayInput.value + " to array.")
+        console.log("Added " + arrayInput.value + " to array.");
     }
     
     arrayInput.value = '';
