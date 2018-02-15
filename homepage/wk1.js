@@ -88,6 +88,7 @@ function addToArray() {
     } else {
         numberArray.push(arrayInput.value);
     }
+    arrayInput.value = 0;
 }
 
 function displayArray() {
