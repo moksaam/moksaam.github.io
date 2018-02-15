@@ -78,10 +78,11 @@ function playAgain(yesPlease) {
     
 }
 
-function addToArray() {
-    var numberArray = [];
-    var arrayInput = document.getElementById("input_array");
+var numberArray = [];
+var arrayInput = document.getElementById("input_array");
 
+function addToArray() {
+    
     if (arrayInput == null) {
         console.log("empty input");
         return;
