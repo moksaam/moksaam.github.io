@@ -26,10 +26,6 @@ document.getElementById("displayArray").onclick = function displayArray() {
     var count = 0;
     output.value = "Your array contains the following numbers:"
     for (count; count < numberArray.length; count++) {
-        if (numberArray[numberArray.length - 1]) {
-            output.value = output.value + " " + numberArray[count];
-        } else {
-            output.value = output.value + numberArray[count];            
-        }
+        output.value = output.value + " " + numberArray[count];        
     }
 }
