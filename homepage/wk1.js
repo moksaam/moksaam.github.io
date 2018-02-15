@@ -1,7 +1,7 @@
 
-    function showMenu() {
-        document.getElementById("exampleDropDown").classList.toggle("show");
-    }
+function showMenu() {
+    document.getElementById("exampleDropDown").classList.toggle("show");
+}
 
 
 window.onclick = function(event) {
