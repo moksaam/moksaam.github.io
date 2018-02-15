@@ -23,6 +23,6 @@ document.getElementById("displayArray").onclick = function displayArray(numberAr
     var output = document.getElementById("output_array");
     var count = 0;
     for (count; count < numberArray.length; count++) {
-        output.value = guess.value + numberArray[count];
+        output.value += guess.value + numberArray[count];
     }
 }
