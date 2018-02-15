@@ -87,6 +87,7 @@ function addToArray() {
         return;
     } else {
         numberArray.push(arrayInput.value);
+        console.log("Added " + arrayInput.value + " to array.")
     }
     arrayInput.value = 0;
 }
