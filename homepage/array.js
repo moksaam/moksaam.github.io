@@ -22,7 +22,7 @@ document.getElementById("displayArray").onclick = function displayArray() {
     //console.log(numberArray.join());
     var output = document.getElementById("output_array");
     var count = 0;
-    output.value = "Your array contains the following numbers: <br>"
+    output.value = "Your array contains the following numbers: "
     for (count; count < numberArray.length; count++) {
         if (numberArray.length - 1) {
             output.value = output.value + numberArray[count];
