@@ -101,4 +101,12 @@ div.dropDownMenu a:hover {
 .cool_buttons {
     background-color: wheat;
     color: rgb(114, 101, 196);
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.cool_buttons:hover {
+    background-color: tomato;
 }
