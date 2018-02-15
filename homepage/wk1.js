@@ -78,3 +78,26 @@ function playAgain(yesPlease) {
     
 }
 
+function addToArray() {
+    var numberArray = [];
+    var arrayInput = document.getElementById("input_array");
+
+    if (arrayInput == null) {
+        console.log("empty input");
+        return;
+    } else {
+        numberArray.push(arrayInput.value);
+    }
+}
+
+function displayArray() {
+    if (numberArray == 0) {
+        alert("The array is empty");
+    }
+
+    var output = document.getElementById("output_array");
+    var count = 0;
+    for (count; count < numberArray.length; count++) {
+        output.value = guess.value + numberArray[count];
+    }
+}
