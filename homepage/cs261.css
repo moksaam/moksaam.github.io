@@ -22,7 +22,8 @@ ul {
 a {
     color: tomato;
     text-decoration: none;
-    padding: 8px;
+    background-color: rgb(76, 66, 146);
+    padding: 6px 8px;
     font-size: 1em;
     border: none;
     cursor: pointer;
