@@ -9,6 +9,7 @@ document.getElementById("arrayBtn").onclick = function addToArray() {
     } else {
         numberArray.push(arrayInput.value);
         console.log("Added " + arrayInput.value + " to array.")
+        console.log(toString(numberArray));
     }
     console.log(toString(numberArray));
     arrayInput.value = 0;
