@@ -97,3 +97,8 @@ div.dropDownMenu a:hover {
 #output_array {
     width: 35%;
 }
+
+.cool_buttons {
+    background-color: wheat;
+    color: rgb(114, 101, 196);
+}

@@ -19,7 +19,8 @@
             <p>X = <input id="num1" type="text" maxlength="5" size="5" value="0"></p>
             <p>Y = <input id="num2" type="text" maxlength="5" size="5" value="0"></p><br>
             <p>And the sum of X + Y is?</p><p id="sum"></p>
-            <button onclick="add()">Add 'em up!</button>
+            <input type="button" onclick="add()"class="cool_buttons" value=
+            "Add 'em up!">
             <br>
         </div>
 
@@ -42,8 +43,8 @@
             <span id="randomNumber"></span>
             <br>
             <label for="guess">Your Guess:</label><input id="guess" type="text" min="1" max="100" maxlength="3" size="3">
-            <input type="button" id="checkBtn" value="Check!">
-            <input type="button" onclick="playAgain(true)" value="Play Again?">
+            <input type="button" id="checkBtn" class="cool_buttons" value="Check!">
+            <input type="button" onclick="playAgain(true)" class="cool_buttons" value="Play Again?">
             <fieldset id="guesses" class="guesses">
                 <legend> Guesses </legend>
                 <textarea id="output" name="output" rows="10"></textarea>
