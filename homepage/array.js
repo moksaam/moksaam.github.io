@@ -15,11 +15,11 @@ document.getElementById("arrayBtn").onclick = function addToArray() {
     return numberArray;
 }
 
-document.getElementById("displayArray").onclick = function displayArray(numberArray) {
+document.getElementById("displayArray").onclick = function displayArray() {
     if (numberArray == 0) {
         alert("The array is empty");
     }
-    console.log(numberArray.join());
+    //console.log(numberArray.join());
     var output = document.getElementById("output_array");
     var count = 0;
     for (count; count < numberArray.length; count++) {
