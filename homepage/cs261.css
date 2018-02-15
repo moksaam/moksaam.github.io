@@ -85,3 +85,11 @@ div.dropDownMenu a:hover {
 .show {
     display: block;
 }
+
+.output { 
+    width: 75%;
+}
+
+.output_array {
+    width: 35%;
+}
