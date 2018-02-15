@@ -122,3 +122,8 @@ div.dropDownMenu a:hover {
 .cool_buttons:hover {
     background-color: tomato;
 }
+
+.button_list {
+    width: 50%;
+    text-align: center;
+}
