@@ -5,6 +5,7 @@ body {
 .menu_container {
     background-color: grey;
     width: 100%;
+    border: 2px solid grey;
 }
 
 h1 {
