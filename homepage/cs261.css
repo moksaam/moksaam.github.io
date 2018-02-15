@@ -70,8 +70,8 @@ div.dropDownMenu a:hover {
 }
 
 .menuBtn {
-    background-color: darkkhaki;
-    color: slateblue;
+    background-color: tomato;
+    color: wheat;
     padding: 8px;
     font-size: 1em;
     border: none;
@@ -79,7 +79,7 @@ div.dropDownMenu a:hover {
 }
 
 .menuBtn:hover, .menuBtn:focus {
-    background-color: azure;
+    background-color: rgb(76, 66, 146);
 }
 
 .show {
