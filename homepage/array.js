@@ -21,7 +21,7 @@ document.getElementById("displayArray").onclick = function displayArray() {
     if (numberArray == 0) {
         alert("The array is empty");
     }
-    console.log(numberArray);
+    //console.log(numberArray);
     var output = document.getElementById("output_array");
     var count = 0;
     output.value = "Your array contains the following numbers:"
