@@ -1,7 +1,7 @@
 var numberArray = [];
 var arrayInput = document.getElementById("input_array");
 
-function addToArray() {
+document.getElementById("arrayBtn").onclick = function addToArray() {
     
     if (arrayInput == null) {
         console.log("empty input");
@@ -10,11 +10,12 @@ function addToArray() {
         numberArray.push(arrayInput.value);
         console.log("Added " + arrayInput.value + " to array.")
     }
+    console.log(toString(numberArray));
     arrayInput.value = 0;
     return numberArray;
 }
 
-function displayArray() {
+document.getElementById("displayArray").onclick = function displayArray(numberArray) {
     if (numberArray == 0) {
         alert("The array is empty");
     }
