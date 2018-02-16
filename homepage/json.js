@@ -12,7 +12,7 @@ request.send();
 
 
 
-document.getElementById("parseTraitsBtn").onclick = function displayJson(my_races_JSON_obj) {
+document.getElementById("parseTraitsBtn").onclick = function displayJson() {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
@@ -26,13 +26,13 @@ document.getElementById("parseTraitsBtn").onclick = function displayJson(my_race
     
 }
 
-document.getElementById("parseJsonBtn").onclick = function parseJsonFile(arr) {
+document.getElementById("parseJsonBtn").onclick = function parseJsonFile() {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
     console.log("parseJsonFile button pushed");
-    for (i in arr.races) {
-        x += "<h2>" + arr.races[i].name + "</h2>";
+    for (i in my_races_JSON_obj.races) {
+        x += "<h2>" + my_races_JSON_obj.races[i].name + "</h2>";
         
     }
     jsonOutput.value = x;
