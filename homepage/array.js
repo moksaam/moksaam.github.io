@@ -31,8 +31,9 @@ document.getElementById("displayArrayBtn").onclick = function displayArray() {
 }
 
 document.getElementById("popArrayBtn").onlcick = function popOffArray() {
-    if (arrayInput.value == null) {
-        console.log("empty input");
+    
+    if (numberArray == '') {
+        console.log("empty array");
         return;
     } else {
         var count = numberArray.length;
