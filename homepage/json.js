@@ -34,7 +34,7 @@ document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_race
     for (i in my_races_JSON_obj.races) {
         for (j in my_races_JSON_obj.races[i]) {
             
-            for (j in my_races_JSON_obj.races[i][j]) {
+            for (k in my_races_JSON_obj.races[i][j]) {
                 x += "<p>" + my_races_JSON_obj.races[i][j][k] + "</p>";
             }
         }
