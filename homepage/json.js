@@ -5,13 +5,14 @@ request.onload = function () {
     var my_races_JSON_obj = JSON.parse(request.responseText);
     alert(my_races_JSON_obj.result[0]);
     console.log(my_races_JSON_obj);
+    displayTraits(my_races_JSON_obj);
 }
 
 request.send();
 
 
 
-document.getElementById("parseTraitsBtn").onclick = function displayTraits() {
+document.getElementById("parseTraitsBtn").onclick = function displayTraits(my_races_JSON_obj) {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
