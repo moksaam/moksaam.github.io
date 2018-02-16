@@ -33,7 +33,10 @@ document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_race
 
     console.log("parseJsonFile button pushed");
     for (i in my_races_JSON_obj.races) {
-        x += "<h2>" + my_races_JSON_obj.races[i].name + "</h2>";
+        for (j in my_races_JSON_obj.races[i]) {
+            x += "<h3>" + my_races_JSON_obj.races[i][j] + "</h3>";
+        }
+       
         
     }
     jsonOutput.innerHTML = x;
