@@ -9,10 +9,10 @@ document.getElementById("parseTraitsBtn").onclick = function displayTraits() {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
-    for (i in my_races_JSON_obj.traits) {
-        x += "<h2>" + my_races_JSON_obj.traits[i].name + "</h2>";
-        for (j in my_races_JSON_obj.traits[i].desc) {
-            x += my_races_JSON_obj.traits[i].desc[j] + "";
+    for (i in my_races_JSON_obj.races) {
+        x += "<h2>" + my_races_JSON_obj.races[i].name + "</h2>";
+        for (j in my_races_JSON_obj.races[i].desc) {
+            x += my_races_JSON_obj.races[i].desc[j] + "";
         }
     }
     jsonOutput.value = x;
