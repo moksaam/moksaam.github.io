@@ -10,7 +10,7 @@ request.onload = function () {
         console.log("displayJson button pushed");
         for (i in my_races_JSON_obj.races) {
             for (j in my_races_JSON_obj.races[i]) {                
-                for (k in my_races_JSON_obj.races[traits][j]) {
+                for (k in my_races_JSON_obj.races[i].traits[j]) {
                     x += "<p>" + my_races_JSON_obj.races[i].traits[k] + "</p>";
                 }
             } 
