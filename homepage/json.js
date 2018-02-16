@@ -9,8 +9,9 @@ request.onload = function () {
     
         console.log("displayJson button pushed");
         for (i in my_races_JSON_obj.races) {
+            x += "<h3>" + my_races_JSON_obj.races[i] + "</h3>";
             for (j in my_races_JSON_obj.races[i]) {
-                x += "<h3>" + my_races_JSON_obj.races[i][j] + "</h3>";
+                x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
             }       
         }
         jsonOutput.innerHTML = x;
@@ -26,9 +27,7 @@ request.onload = function () {
                 for (k in my_races_JSON_obj.races[i].traits) {
                     x += "<p>" + my_races_JSON_obj.races[i].traits[k] + "</p>";
                 }
-            }
-           
-            
+            } 
         }
         jsonOutput.innerHTML = x;
     }
