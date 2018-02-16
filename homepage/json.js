@@ -5,7 +5,7 @@ request.onload = function () {
     var my_races_JSON_obj = JSON.parse(request.responseText);
     
     console.log(my_races_JSON_obj);
-    displayTraits(my_races_JSON_obj);
+    //displayTraits(my_races_JSON_obj);
 }
 
 request.send();
