@@ -25,7 +25,7 @@ document.getElementById("parseTraitsBtn").onclick = function displayTraits(my_ra
     jsonOutput.value = x;
 }
 
-document.getElementById("parseJsonBtn").onclick = function parseJsonFile() {
+document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_races_JSON_obj) {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
