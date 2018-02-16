@@ -18,10 +18,22 @@ request.onload = function () {
         jsonOutput.innerHTML = x;
     }
 
+    console.log(my_races_JSON_obj);
+    return my_races_JSON_obj;
+}
+
+request.send();
+
+
+var req = new XMLHttpRequest();
+req.overrideMimeType("application/json");
+req.open('GET', 'jsonex.json', true);
+req.onload = function () {
+    var my_races_JSON_obj = JSON.parse(req.responseText);
     document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_races_JSON_obj) {
         var i, j, k, x = 0;
         var jsonOutput = document.getElementById("output_json");
-    
+
         console.log("parseJsonFile button pushed");
         for (i in my_races_JSON_obj.races) {
             x += "<h3>" + my_races_JSON_obj.races[i] + "</h3>";
@@ -31,12 +43,9 @@ request.onload = function () {
         }
         jsonOutput.innerHTML = x;
     }
-
-    console.log(my_races_JSON_obj);
-    return my_races_JSON_obj;
 }
 
-request.send();
+req.send();
 
 document.getElementById("resetFieldBtn").onclick = function resetField() {
     var field = document.getElementById("output_json");
