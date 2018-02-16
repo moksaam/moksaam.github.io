@@ -31,9 +31,7 @@ document.getElementById("parseJsonBtn").onclick = function parseJsonFile(arr) {
 
     for (i in arr.races) {
         x += "<h2>" + arr.races[i].name + "</h2>";
-        for (j in arr.races[i].desc) {
-            x += arr.traits[i].desc[j] + "";
-        }
+        
     }
     jsonOutput.value = x;
 }
