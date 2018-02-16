@@ -4,7 +4,7 @@ request.open('GET', 'jsonex.json', true);
 request.onload = function () {
     var my_races_JSON_obj = JSON.parse(request.responseText);
     document.getElementById("parseTraitsBtn").onclick = function displayJson() {
-        var i, j, x = 0;
+        var i, j, k, x = 0;
         var jsonOutput = document.getElementById("output_json");
     
         console.log("displayJson button pushed");
