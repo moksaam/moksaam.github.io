@@ -8,10 +8,9 @@ request.onload = function () {
         var jsonOutput = document.getElementById("output_json");
     
         console.log("displayJson button pushed");
-        for (i; i < my_races_JSON_obj.length; i++) {
-            jsonOutput.innerHTML += "<h3>" + my_races_JSON_obj.races[i] + "</h3>"; 
-            for (j; j < my_races_JSON_obj.races[i].length; j++) {
-                jsonOutput.innerHTML += "<p>" + my_races_JSON_obj.races[i][j] + "</p>"
+        for (i in my_races_JSON_obj.races) {
+            for (j in my_races_JSON_obj.races[i]) {
+                x += "<h3>" + my_races_JSON_obj.races[i][j] + "</h3>";
             }       
         }
         
