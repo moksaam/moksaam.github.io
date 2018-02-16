@@ -1,9 +1,15 @@
 var request = new XMLHttpRequest();
-request.open("GET", jsonex.json, false);
-request.send(null);
-var my_races_JSON_obj = JSON.parse(request.responseText);
-alert(my_races_JSON_obj.result[0]);
-console.log(my_races_JSON_obj);
+request.overrideMimeType("application/json");
+request.open('GET', jsonex.json, true);
+request.onload = function () {
+    var my_races_JSON_obj = JSON.parse(request.responseText);
+    alert(my_races_JSON_obj.result[0]);
+    console.log(my_races_JSON_obj);
+}
+
+request.send();
+
+
 
 document.getElementById("parseTraitsBtn").onclick = function displayTraits() {
     var i, j, x = 0;
