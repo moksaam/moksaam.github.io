@@ -57,6 +57,7 @@ a:hover {
 a.menu {
     color: black;
     text-decoration: none;
+    display: inline;
 }
 
 a.menu:hover {
