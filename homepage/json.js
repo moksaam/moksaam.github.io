@@ -13,7 +13,7 @@ request.onload = function () {
                 x += "<h3>" + my_races_JSON_obj.races[i][j] + "</h3>";
             }       
         }
-        
+        jsonOutput.innerHTML = x;
     }
     console.log(my_races_JSON_obj);
     //displayJson(my_races_JSON_obj);
