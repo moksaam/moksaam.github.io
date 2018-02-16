@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CS 261 Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</title>
+        <link rel="stylesheet" href="cs261.css">
+    </head>
+
+    <body>
+        <div class="menu_container">
+            <div class="menu">
+                <ul>
+                    <li><a class="nav_btns" href="CS261Fluency.html">Back to list</a></li>
+                    <li><a class="nav_btns" href="wk1.html">Previous Page</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example"><h3>Let's play with JSON</h3>
+            <br><hr>
+            <p>Here is an example of our JSON file:</p><br>
+            <p>{
+                    "name":"Dwarf",
+                    "ability_scores":"Your Constitution score increases by 2.",
+                    "age":"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years.",
+                    "alignment":"Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.",
+                    "size":"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
+                    "speed":"Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.",
+                    "traits": [
+                        {"tname":"Darkvision", "tdesc": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."},
+                        {"tname":"Dwarven_Resilience", "tdesc": "You have advantage on saving throws against poison, and you have resistance against poison damage."},
+                        {"tname":"Dwarven_Combat_Training", "tdesc": "You have proficiency with the battleaxe, handaxe, Light hammer, and warhammer."},
+                        {"tname":"Tool_Proficiency", "tdesc": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."},
+                        {"tname":"Stonecunning", "tdesc": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."}
+                    ],
+                    "languages":"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+            
+                }</p><br>
+            <p>Push the buttons to see what we have in our JSON object</p>
+            <div class="button_list">
+                <input type="button" id="parseJsonBtn" class="cool_buttons" value="Parse JSON"><br>
+                <input type="button" id="parseTraitsBtn" class="cool_buttons" value="Parse Traits"><br>
+            </div>
+            <fieldset id="array_output" class="output">
+                    <legend> JSON Output </legend>
+                    <textarea id="output_json" name="output_json" rows="10"></textarea>
+            </fieldset>
+            <br>
+            <input type="button" id="resetFieldBtn" class="cool_buttons" value="Reset Field">
+            <br>
+            <br>
+        </div>
+    </body>
+
+</html>
