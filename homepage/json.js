@@ -6,13 +6,14 @@ request.onload = function () {
     
     console.log(my_races_JSON_obj);
     //displayJson(my_races_JSON_obj);
+    return my_races_JSON_obj;
 }
 
 request.send();
 
 
 
-document.getElementById("parseTraitsBtn").onclick = function displayJson() {
+document.getElementById("parseTraitsBtn").onclick = function displayJson(my_races_JSON_obj) {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
@@ -26,7 +27,7 @@ document.getElementById("parseTraitsBtn").onclick = function displayJson() {
     
 }
 
-document.getElementById("parseJsonBtn").onclick = function parseJsonFile() {
+document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_races_JSON_obj) {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
