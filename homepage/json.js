@@ -9,10 +9,11 @@ request.onload = function () {
     
         console.log("displayJson button pushed");
         for (i in my_races_JSON_obj.races) {
-            x += "<h3>" + my_races_JSON_obj.races[i] + "</h3>";
-            for (j in my_races_JSON_obj.races[i]) {
-                x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
-            }       
+            for (j in my_races_JSON_obj.races[i]) {                
+                for (k in my_races_JSON_obj.races[i].traits) {
+                    x += "<p>" + my_races_JSON_obj.races[i].traits[k] + "</p>";
+                }
+            } 
         }
         jsonOutput.innerHTML = x;
     }
@@ -23,17 +24,15 @@ request.onload = function () {
     
         console.log("parseJsonFile button pushed");
         for (i in my_races_JSON_obj.races) {
-            for (j in my_races_JSON_obj.races[i]) {                
-                for (k in my_races_JSON_obj.races[i].traits) {
-                    x += "<p>" + my_races_JSON_obj.races[i].traits[k] + "</p>";
-                }
-            } 
+            x += "<h3>" + my_races_JSON_obj.races[i] + "</h3>";
+            for (j in my_races_JSON_obj.races[i]) {
+                x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
+            }       
         }
         jsonOutput.innerHTML = x;
     }
 
     console.log(my_races_JSON_obj);
-    //displayJson(my_races_JSON_obj);
     return my_races_JSON_obj;
 }
 
