@@ -16,8 +16,11 @@ document.getElementById("parseTraitsBtn").onclick = function displayJson(arr) {
     var i, j, x = 0;
     var jsonOutput = document.getElementById("output_json");
 
-    for (i; i < arr.races.length; i++) {
-        x += "<h3>" + arr.races[i] + "</h3>";        
+    for (i; i < arr.length; i++) {
+        x += "<h3>" + arr.races[i] + "</h3>"; 
+        for (j; j < arr.races[i].length; j++) {
+            x+= "<p>" + arr.races[i][j] + "</p>"
+        }       
     }
     jsonOutput.value = x;
 }
