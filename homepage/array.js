@@ -35,8 +35,8 @@ document.getElementById("popArrayBtn").onlcick = function popOffArray() {
         console.log("empty input");
         return;
     } else {
-        var count = 0;
-        for (count; count < numberArray.length; count--) {
+        var count = numberArray.length;
+        for (count; count > 0; count--) {
             numberArray.pop();
             console.log("Removed value from array");
         }
