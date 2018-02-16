@@ -17,12 +17,12 @@ document.getElementById("parseTraitsBtn").onclick = function displayJson(arr) {
     var jsonOutput = document.getElementById("output_json");
 
     for (i; i < arr.length; i++) {
-        x += "<h3>" + arr.races[i] + "</h3>"; 
+        jsonOutput.value += "<h3>" + arr.races[i] + "</h3>"; 
         for (j; j < arr.races[i].length; j++) {
-            x+= "<p>" + arr.races[i][j] + "</p>"
+            jsonOutput.value += "<p>" + arr.races[i][j] + "</p>"
         }       
     }
-    jsonOutput.value = x;
+    
 }
 
 document.getElementById("parseJsonBtn").onclick = function parseJsonFile(arr) {
