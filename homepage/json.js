@@ -19,9 +19,9 @@ document.getElementById("parseTraitsBtn").onclick = function displayJson(my_race
 
     console.log("displayJson button pushed");
     for (i; i < my_races_JSON_obj.length; i++) {
-        jsonOutput.value += "<h3>" + my_races_JSON_obj.races[i] + "</h3>"; 
+        jsonOutput.innerHTML += "<h3>" + my_races_JSON_obj.races[i] + "</h3>"; 
         for (j; j < my_races_JSON_obj.races[i].length; j++) {
-            jsonOutput.value += "<p>" + my_races_JSON_obj.races[i][j] + "</p>"
+            jsonOutput.innerHTML += "<p>" + my_races_JSON_obj.races[i][j] + "</p>"
         }       
     }
     
@@ -36,5 +36,5 @@ document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_race
         x += "<h2>" + my_races_JSON_obj.races[i].name + "</h2>";
         
     }
-    jsonOutput.value = x;
+    jsonOutput.innerHTML = x;
 }
