@@ -17,7 +17,7 @@ window.onload = function () {
     });
 
     document.addEventListener("drag", function(event) {
-        document.getElementById("drag_txt").innerHTML = "Dragging has been engaged!";
+        document.getElementById("drag_txt2").innerHTML = "Dragging has been engaged!";
     });
 
     document.addEventListener("dragover", function(event) {
@@ -31,7 +31,7 @@ window.onload = function () {
 
         var data = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(data));
-        document.getElementById("drag_txt").innerHTML = "Dragging has ended. Drop successful.";
+        document.getElementById("drag_txt2").innerHTML = "Dragging has ended. Drop successful.";
         event.dataTransfer.clearData();
         
     });
