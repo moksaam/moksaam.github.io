@@ -35,11 +35,12 @@ window.onload = function () {
         event.dataTransfer.clearData();
         
     });
-
     
+    var parentColor = document.getElementById('parentDiv');
     for (var i = 1; i <= 16; i++) {
-        var parentColor = document.getElementById('parentDiv');
+        
         var childColor = document.createElement('div');
+        childColor.setAttribute('class');
         parentColor.appendChild(childColor);
     }
 
@@ -52,7 +53,7 @@ window.onload = function () {
         return randomColor;
     }
 
-    var rndColorBtn = document.querySelectorAll("div.");
+    var rndColorBtn = document.querySelectorAll(".colordemo");
 
     for (var i = 0; i < rndColorBtn.length; i++) {
         rndColorBtn[i].onmouseover = function (event) {
