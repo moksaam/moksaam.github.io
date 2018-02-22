@@ -10,7 +10,7 @@ window.onload = function () {
     }
 
     document.addEventListener("dragstart", function(event) {
-        event.dataTransfer("Text", event.target.id);
+        event.dataTransfer.setData("Text", event.target.id);
     });
 
     document.addEventListener("drag", function(event) {
