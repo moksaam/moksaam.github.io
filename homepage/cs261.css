@@ -151,12 +151,3 @@ div.dropDownMenu a:hover {
     text-align: right;
     display: inline-block;
 }
-
-.dragdemo {
-    float: center; 
-    width: 100px; 
-    height: 35px;
-    margin: 15px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-}
