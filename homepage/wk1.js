@@ -39,7 +39,7 @@ window.onload = function () {
         var userGuess = document.getElementById("guess").value;
         makeGuess(userGuess);
         chances--;
-        chancesLeft.innerHTML = "You have " + chances + " chances left."
+        chancesLeft.innerHTML = "You have " + chances + " chances left.";
         count++;
         
         if (count == turns) {

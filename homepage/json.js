@@ -36,7 +36,7 @@ req.onload = function () {
 
         console.log("parseJsonFile button pushed");
         for (i in my_races_JSON_obj.races) {
-            //x += "<h3>" + my_races_JSON_obj.races[i] + "</h3>";
+            x += "<h3>" + my_races_JSON_obj.races[i] + "</h3>";
             for (j in my_races_JSON_obj.races[i]) {
                 x += "<p>" + my_races_JSON_obj.races[0][j] + "</p>";
             }       
