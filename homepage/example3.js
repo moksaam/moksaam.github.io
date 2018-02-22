@@ -36,27 +36,27 @@ window.onload = function () {
         
     });
 
-    document.getElementsByClassName("color_demo").onload = function () {
-        for (var i = 1; i <= 16; i++) {
-            var colorBtn = document.createElement('button');
-            document.body.appendChild(colorBtn);
-        }
+    
+    for (var i = 1; i <= 16; i++) {
+        var colorBtn = document.createElement('button');
+        document.body.appendChild(colorBtn);
+    
 
-        function random(number) {
-            return Math.floor(Math.random()*number);
-        }
+    function random(number) {
+        return Math.floor(Math.random()*number);
+    }
 
-        function changeBG () {
-            var randomColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-            return randomColor;
-        }
+    function changeBG () {
+        var randomColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        return randomColor;
+    }
 
-        var rndColorBtn = document.querySelectorAll("button");
+    var rndColorBtn = document.querySelectorAll("button");
 
-        for (var i = 0; i < rndColorBtn.length; i++) {
-            rndColorBtn[i].onmouseover = function (event) {
-                event.target.style.backgroundColor = changeBG();
-            }
+    for (var i = 0; i < rndColorBtn.length; i++) {
+        rndColorBtn[i].onmouseover = function (event) {
+            event.target.style.backgroundColor = changeBG();
         }
     }
+
 }
