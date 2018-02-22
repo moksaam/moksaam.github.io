@@ -14,13 +14,36 @@
                 </ul>
             </div>
         </div>
+
         <h2>Javascript event examples</h2>
+
         <div class="example">
-            <span id="demo_onClick">Let's take a look at the onlick event.  Click me if you dare...</span>
+            <span id="demo_onClick" id="dragTarget" draggable="true">Let's take a look at the onlick event.  Click me if you dare...</span>
             <br>
             <hr>
-            <span id="demo_ondblClick">Do you dare double click me?</span>
+            <span id="demo_ondblClick" id="dragTarget" draggable="true">Do you dare double click me?</span>
+            <br>
+            <br>
+            <span id="drag_txt"></span>
         </div>
+
+        <div class="example">
+            <div class="dragdemo" id="dragdiv1">
+                <p>Drag here!</p>
+            </div>
+        </div>
+
+        <br>
+        <span id="dragdemo_txt"></span>
+        <br>
+
+        <div class="example">
+            <div class="dragdemo" id="dragdiv2">                
+            </div>
+        </div>
+
+        <span id="dragdemo_txt2"></span>
+
     </body>
     <script language="javascript" src="example3.js"></script>
 </html>
