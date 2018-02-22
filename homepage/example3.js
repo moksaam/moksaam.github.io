@@ -41,9 +41,8 @@ window.onload = function () {
         
         var childColor = document.createElement('div');
         childColor.setAttribute('class', 'colordemo');
-        if (parentColor) {
-            parentColor.appendChild(childColor);
-        }        
+        document.body.appendChild(childColor);
+              
     }
 
     function random(number) {
