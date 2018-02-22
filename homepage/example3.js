@@ -35,4 +35,28 @@ window.onload = function () {
         event.dataTransfer.clearData();
         
     });
+
+    document.getElementById("demo_onClick").ondblclick = function () {
+        for (var i = 1; i <= 16; i++) {
+            var colorBtn = document.createElement('button');
+            document.getElementsByClassName("color_demo").appendChild(colorBtn);
+        }
+
+        function random(number) {
+            return Math.floor(Math.random()*number);
+        }
+
+        function changeBG () {
+            var randomColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            return randomColor;
+        }
+
+        var rndColorBtn = document.querySelectorAll("button");
+
+        for (var i = 0; i < rndColorBtn.length; i++) {
+            rndColorBtn[i].onmouseover = function (event) {
+                event.target.style.backgroundColor = changeBG();
+            }
+        }
+    }
 }

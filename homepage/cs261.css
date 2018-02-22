@@ -151,3 +151,10 @@ div.dropDownMenu a:hover {
     text-align: right;
     display: inline-block;
 }
+
+.color_demo {
+    background-color: black;
+    height: 50px;
+    width: 20%;
+    float: left;
+}
