@@ -36,7 +36,7 @@ window.onload = function () {
         
     });
 
-    document.getElementById("demo_onClick").ondblclick = function () {
+    document.getElementsByClassName("color_demo").onclick = function () {
         for (var i = 1; i <= 16; i++) {
             var colorBtn = document.createElement('button');
             document.getElementsByClassName("color_demo").appendChild(colorBtn);
