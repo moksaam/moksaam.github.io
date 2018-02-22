@@ -36,13 +36,14 @@ window.onload = function () {
         
     });
     
-    var parentColor = document.getElementById('parentDiv');
+    var parentColor = document.getElementById('parentColor');
     for (var i = 1; i <= 16; i++) {
         
         var childColor = document.createElement('div');
         childColor.setAttribute('class', 'colordemo');
-        document.body.appendChild(childColor);
-              
+        if (parentColor) {
+            parentColor.appendChild(childColor);
+        }        
     }
 
     function random(number) {
