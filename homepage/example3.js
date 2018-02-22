@@ -28,11 +28,11 @@ window.onload = function () {
     document.addEventListener("drop", function(event) {
         console.log("Drop!");
         event.preventDefault();
-        if (event.target.className == "dragdemo") {
-            var data = event.dataTransfer.getData("text");
-            event.target.appendChild(document.getElementById(data));
-            document.getElementById("drag_txt").innerHTML = "Dragging has ended. Drop successful.";
-            event.dataTransfer.clearData();
-        }
+        
+        var data = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(data));
+        document.getElementById("drag_txt").innerHTML = "Dragging has ended. Drop successful.";
+        event.dataTransfer.clearData();
+        
     });
 }
