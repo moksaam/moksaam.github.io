@@ -24,7 +24,7 @@ window.onload = function () {
     document.addEventListener("drop", function(event) {
         event.preventDefault();
         if (event.target.className == "dragdemo") {
-            var data = event.dataTransfer("Text");
+            var data = event.dataTransfer.getData("Text");
             event.target.appendChild(document.getElementById(data));
             document.getElementById("drag_txt").innerHTML = "Dragging has ended. Drop successful.";
         }
