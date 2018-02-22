@@ -38,9 +38,10 @@ window.onload = function () {
 
     
     for (var i = 1; i <= 16; i++) {
-        var colorBtn = document.createElement('button');
-        document.body.appendChild(colorBtn);
-    
+        var parentColor = document.getElementById('parentDiv');
+        var childColor = document.createElement('div');
+        parentColor.appendChild(childColor);
+    }
 
     function random(number) {
         return Math.floor(Math.random()*number);
@@ -51,7 +52,7 @@ window.onload = function () {
         return randomColor;
     }
 
-    var rndColorBtn = document.querySelectorAll("button");
+    var rndColorBtn = document.querySelectorAll("div.");
 
     for (var i = 0; i < rndColorBtn.length; i++) {
         rndColorBtn[i].onmouseover = function (event) {
