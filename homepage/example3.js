@@ -2,7 +2,7 @@ window.onload = function () {
     document.getElementById("demo_onClick").onclick = function () {
         console.log("demo_onClick clicked!");
         var change_demo = document.getElementById("demo_onClick");
-        change_demo.innerHTML = "Congratulations, you have deafeated the first challenge!";
+        change_demo.innerHTML = "Congratulations, you have deafeated the first challenge! Now click and drag me down";
     }
 
     document.getElementById("demo_ondblClick").ondblclick = function () {
@@ -28,7 +28,7 @@ window.onload = function () {
     document.addEventListener("drop", function(event) {
         console.log("Drop!");
         event.preventDefault();
-        
+
         var data = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(data));
         document.getElementById("drag_txt").innerHTML = "Dragging has ended. Drop successful.";
