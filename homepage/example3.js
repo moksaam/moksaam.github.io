@@ -36,8 +36,8 @@ window.onload = function () {
         
     });
     
-    document.getElementById("parentDiv").onclick = function ()  {
-        console.log("parentDiv clicked!");
+    document.getElementById("addColorDivBtn").onclick = function ()  {
+        console.log("addColorDivBtn clicked!");
         var maxBoxes = 40;
         var count = 0;
 
