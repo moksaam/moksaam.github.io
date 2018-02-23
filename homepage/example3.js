@@ -87,6 +87,7 @@ window.onload = function () {
                childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
                count--;
             }
-        }        
+        }
+        document.getElementById("addColorDivBtn").disabled = false;        
     }
 }
