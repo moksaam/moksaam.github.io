@@ -163,6 +163,9 @@ div.dropDownMenu a:hover {
     background-color: wheat;
     color: black;
     height: 50px;
-    width: 75%;
+    width: 150px;
+    position: absolute;
+    right: 30%;
+    left: 30%;
     text-align: center;
 }
