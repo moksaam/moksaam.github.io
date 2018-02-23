@@ -42,9 +42,7 @@ window.onload = function () {
         
             var childColor = document.createElement('div');
             childColor.setAttribute('class', 'colordemo');
-            if (parentColor) {
-                parentColor.appendChild(childColor);
-            }        
+            parentColor.appendChild(childColor);   
         }
     });
 
