@@ -36,13 +36,12 @@ window.onload = function () {
         
     });
     
-    
-    document.getElementById("parentColor").onclick = function ()  {
-        console.log("parentColor clicked!");
+    document.getElementById("parentDiv").onclick = function ()  {
+        console.log("parentDiv clicked!");
            
-        var childColor = document.createElement('div');
-        childColor.setAttribute('class', 'colordemo');
-        document.body.appendChild(childColor);   
+        var childDiv = document.createElement('div');
+        childDiv.setAttribute('class', 'colordemo');
+        document.body.appendChild(childDiv);   
         
     }
 
