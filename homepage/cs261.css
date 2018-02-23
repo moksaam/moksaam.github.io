@@ -152,7 +152,7 @@ div.dropDownMenu a:hover {
     display: inline-block;
 }
 
-#parentColor {
+.colordemo {
     background-color: black;
     height: 50px;
     width: 20%;
