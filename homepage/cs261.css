@@ -155,7 +155,14 @@ div.dropDownMenu a:hover {
 .colordemo {
     background-color: black;
     height: 50px;
-    width: 100%;
+    width: 80%;
+    float: center;
+}
+
+.colordemoChild {
+    background-color: black;
+    height: 50px;
+    width: 16%;
     float: center;
 }
 
