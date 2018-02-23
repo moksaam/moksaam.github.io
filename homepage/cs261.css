@@ -71,6 +71,7 @@ div.example {
     text-align: center;
     color: wheat;
     background: gray;
+    position: relative;
 }
 
 div.dropDownMenu {
