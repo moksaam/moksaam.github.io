@@ -41,7 +41,7 @@ window.onload = function () {
            
         var childDiv = document.createElement('div');
         childDiv.setAttribute('class', 'colordemo');
-        document.body.appendChild(childDiv);   
+        document.getElementById("parentDiv").appendChild(childDiv);   
         changeColor();
     }
 
@@ -65,9 +65,10 @@ window.onload = function () {
     }
 
     document.getElementById("colorCleanup").onclick = function () {
-        var childDiv = document.body;
+        var childDiv = document.getElementById("parentDiv");
         if (childDiv.childNodes.length > 0) {
-        childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
+            console.log("added childDiv");
+           childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
         } else { console.log("no more divs");}
     }
 }
