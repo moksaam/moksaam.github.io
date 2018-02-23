@@ -41,7 +41,7 @@ window.onload = function () {
            
         var childDiv = document.createElement('div');
         childDiv.setAttribute('class', 'colordemo');
-        document.getElementById("parentDiv").appendChild(childDiv);   
+        document.body.appendChild(childDiv);   
         changeColor();
     }
 
