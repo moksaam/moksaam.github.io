@@ -42,7 +42,7 @@ window.onload = function () {
         var childDiv = document.createElement('div');
         childDiv.setAttribute('class', 'colordemo');
         document.body.appendChild(childDiv);   
-        
+        changeColor();
     }
 
     function random(number) {
@@ -54,12 +54,13 @@ window.onload = function () {
         return randomColor;
     }
 
-    var rndColorBtn = document.querySelectorAll(".colordemo");
+    function changeColor () {
+        var rndColorBtn = document.querySelectorAll("div.colordemo");
 
-    for (var i = 0; i < rndColorBtn.length; i++) {
-        rndColorBtn[i].onmouseover = function (event) {
-            event.target.style.backgroundColor = changeBG();
+        for (var i = 0; i < rndColorBtn.length; i++) {
+            rndColorBtn[i].onmouseover = function (event) {
+                event.target.style.backgroundColor = changeBG();
+            }
         }
     }
-
 }
