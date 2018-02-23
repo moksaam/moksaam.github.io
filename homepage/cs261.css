@@ -168,5 +168,6 @@ div.dropDownMenu a:hover {
     position: absolute;
     right: 30%;
     left: 30%;
+    float: center;
     text-align: center;
 }
