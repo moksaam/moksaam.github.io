@@ -42,15 +42,18 @@ window.onload = function () {
         var count = 0;
 
         while (count < maxBoxes) {
-            var childDiv = document.createElement('div');
-            childDiv.setAttribute('class', 'colordemo');
-            document.getElementById("parentDiv").appendChild(childDiv); 
-            count++;
+            
+            if (count >= maxBoxes) {
+                console.log("Created max number of boxes.")
+                return;
+            } else {
+                var childDiv = document.createElement('div');
+                childDiv.setAttribute('class', 'colordemo');
+                document.getElementById("parentDiv").appendChild(childDiv); 
+                count++;
+            }
         }
-        if (count >= maxBoxes) {
-            document.getElementsByClassName("colordemo").disabled = true;
-        }
-
+       
         changeColor();
     }
 
@@ -75,9 +78,15 @@ window.onload = function () {
 
     document.getElementById("colorCleanup").onclick = function () {
         var childDiv = document.getElementById("parentDiv");
-        if (childDiv.childNodes.length > 0) {
-            console.log("added childDiv");
-           childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
-        } else { console.log("no more divs");}
+        var maxBoxes = childDiv.childNodes.length;
+        var count = 0;
+
+        while (maxBoxes > count) {
+            if (childDiv.childNodes.length > 0) {
+                console.log("added childDiv");
+               childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
+               count--;
+            } else { console.log("no more divs");}
+        }        
     }
 }
