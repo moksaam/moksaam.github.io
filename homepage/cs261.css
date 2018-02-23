@@ -155,8 +155,8 @@ div.dropDownMenu a:hover {
 .colordemo {
     background-color: black;
     height: 50px;
-    width: 50%;
-    float: left;
+    width: 100%;
+    float: center;
 }
 
 #colorCleanup {
