@@ -153,6 +153,12 @@ div.dropDownMenu a:hover {
     display: inline-block;
 }
 
+#containerDiv {
+    height: 200px;
+    display: flex;
+    align-content: center;
+}
+
 #parentDiv {
     height: 500px;
     display: flex;
@@ -173,8 +179,6 @@ div.dropDownMenu a:hover {
     height: 150px;
     width: 150px;
     position: absolute;
-    right: 30%;
-    left: 30%;
     float: center;
     text-align: center;
 }

@@ -38,10 +38,19 @@ window.onload = function () {
     
     document.getElementById("parentDiv").onclick = function ()  {
         console.log("parentDiv clicked!");
-           
-        var childDiv = document.createElement('div');
-        childDiv.setAttribute('class', 'colordemo');
-        document.getElementById("parentDiv").appendChild(childDiv);   
+        var maxBoxes = 40;
+        var count = 0;
+
+        while (count < maxBoxes) {
+            var childDiv = document.createElement('div');
+            childDiv.setAttribute('class', 'colordemo');
+            document.getElementById("parentDiv").appendChild(childDiv); 
+            count++;
+        }
+        if (count >= maxBoxes) {
+            document.getElementsByClassName("colordemo").disabled = true;
+        }
+
         changeColor();
     }
 
