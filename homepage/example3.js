@@ -40,7 +40,7 @@ window.onload = function () {
         console.log("parentDiv clicked!");
            
         var childDiv = document.createElement('div');
-        childDiv.setAttribute('class', 'colordemoChild');
+        childDiv.setAttribute('class', 'colordemo');
         document.getElementById("parentDiv").appendChild(childDiv);   
         changeColor();
     }
