@@ -181,8 +181,9 @@ div.dropDownMenu a:hover {
 #colorCleanup {
     background-color: wheat;
     color: black;
+    font-size: 1em;
     height: 150px;
-    width: 150px;
+    width: 100%;
     position: absolute;
     float: center;
     text-align: center;
