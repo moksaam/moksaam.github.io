@@ -38,7 +38,7 @@ window.onload = function () {
     
     var parentColor = document.getElementById('parentColor');
     document.getElementById("parentColor").onclick = function ()  {
-        
+        console.log("parentColor clicked!");
         for (var i = 1; i <= 16; i++) {        
             var childColor = document.createElement('div');
             childColor.setAttribute('class', 'colordemo');
