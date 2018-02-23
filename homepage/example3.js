@@ -79,15 +79,15 @@ window.onload = function () {
 
     document.getElementById("colorCleanup").onclick = function () {
         var childDiv = document.getElementById("parentDiv");
-        var maxBoxes = childDiv.childNodes.length;
-        var count = 0;
+        var maxBoxes = 0;
+        var count = 40;
 
-        while (maxBoxes > count) {
+        while (count > maxBoxes) {
             if (childDiv.childNodes.length > 0) {
-                console.log("added childDiv");
+                console.log("removed childDiv");
                childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
-               count++;
-            } else { console.log("no more divs");}
+               count--;
+            }
         }        
     }
 }
