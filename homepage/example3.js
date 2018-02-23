@@ -43,14 +43,15 @@ window.onload = function () {
 
         while (count < maxBoxes) {
             
-            if (count >= maxBoxes) {
-                console.log("Created max number of boxes.")
-                return;
-            } else {
+            if (count < maxBoxes) {
+                console.log("Created color divs");
                 var childDiv = document.createElement('div');
                 childDiv.setAttribute('class', 'colordemo');
                 document.getElementById("parentDiv").appendChild(childDiv); 
                 count++;
+            } else {
+                console.log("Max divs created.");
+                document.getElementById("addColorDovBtn").disabled = true;
             }
         }
        
