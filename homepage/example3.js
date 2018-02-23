@@ -63,4 +63,15 @@ window.onload = function () {
             }
         }
     }
+
+    document.getElementById("colorCleanup").onclick = function () {
+        removeChildDiv();
+    }
+    function removeChildDiv () {
+        var childDiv = document.getElementsByClassName("colordemo");
+
+        while (childDiv > 1) {
+            childDiv[0].parentNode.removeChild(childDiv[0]);
+        }
+    }
 }
