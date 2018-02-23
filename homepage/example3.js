@@ -51,7 +51,7 @@ window.onload = function () {
                 count++;
             } else {
                 console.log("Max divs created.");
-                document.getElementById("addColorDovBtn").disabled = true;
+                document.getElementById("addColorDivBtn").disabled = true;
             }
         }
        
