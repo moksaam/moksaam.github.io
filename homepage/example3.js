@@ -71,7 +71,7 @@ window.onload = function () {
     function removeChildDiv () {
         var childDiv = document.getElementsByClassName("colordemo");
 
-        childDiv.removeChild(childDiv.childNodes[0]);
+        childDiv.removeChild(childDiv.childNodes);
         
     }
 }
