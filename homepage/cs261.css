@@ -166,6 +166,10 @@ div.dropDownMenu a:hover {
     align-content: center;
 }
 
+#addColorDivBtn {
+    width: 100%;
+}
+
 .colordemo {
     background-color: black;
     height: 50px;
