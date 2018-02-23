@@ -49,10 +49,9 @@ window.onload = function () {
                 childDiv.setAttribute('class', 'colordemo');
                 document.getElementById("parentDiv").appendChild(childDiv); 
                 count++;
-            } else {
-                console.log("Max divs created.");
-                document.getElementById("addColorDivBtn").disabled = true;
-            }
+            } 
+            console.log("Max divs created.");
+            document.getElementById("addColorDivBtn").disabled = true;
         }
        
         changeColor();
