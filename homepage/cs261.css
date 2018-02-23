@@ -162,7 +162,7 @@ div.dropDownMenu a:hover {
 .colordemoChild {
     background-color: black;
     height: 50px;
-    position: relative;
+    display: inline-block;
 }
 
 #colorCleanup {
