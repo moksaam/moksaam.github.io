@@ -37,14 +37,14 @@ window.onload = function () {
     });
     
     var parentColor = document.getElementById('parentColor');
-    parentColor.addEventListener ('onclick', function (event) {
+    document.getElementById("parentColor").onclick = function ()  {
         for (var i = 1; i <= 16; i++) {
         
             var childColor = document.createElement('div');
             childColor.setAttribute('class', 'colordemo');
             parentColor.appendChild(childColor);   
         }
-    });
+    }
 
     function random(number) {
         return Math.floor(Math.random()*number);
