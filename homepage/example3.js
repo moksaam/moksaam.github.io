@@ -37,14 +37,16 @@ window.onload = function () {
     });
     
     var parentColor = document.getElementById('parentColor');
-    for (var i = 1; i <= 16; i++) {
+    parentColor.addEventListener ('onclick', function (event) {
+        for (var i = 1; i <= 16; i++) {
         
-        var childColor = document.createElement('div');
-        childColor.setAttribute('class', 'colordemo');
-        if (parentColor) {
-            parentColor.appendChild(childColor);
-        }        
-    }
+            var childColor = document.createElement('div');
+            childColor.setAttribute('class', 'colordemo');
+            if (parentColor) {
+                parentColor.appendChild(childColor);
+            }        
+        }
+    });
 
     function random(number) {
         return Math.floor(Math.random()*number);
