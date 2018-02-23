@@ -66,6 +66,8 @@ window.onload = function () {
 
     document.getElementById("colorCleanup").onclick = function () {
         var childDiv = document.getElementById("parentDiv");
+        if (childNodes == 0) {
         childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
+        }
     }
 }
