@@ -86,7 +86,7 @@ window.onload = function () {
             if (childDiv.childNodes.length > 0) {
                 console.log("added childDiv");
                childDiv.removeChild(childDiv.childNodes[childDiv.childNodes.length - 1]);
-               count--;
+               count++;
             } else { console.log("no more divs");}
         }        
     }
