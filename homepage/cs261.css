@@ -154,7 +154,10 @@ div.dropDownMenu a:hover {
 }
 
 #parentDiv {
-    height: 50%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .colordemo {
