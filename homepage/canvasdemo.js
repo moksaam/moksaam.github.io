@@ -4,7 +4,7 @@ context.moveTo(0,0);
 context.lineTo(400,200);
 context.stroke();
 
-document.body.addEventListener("click", function changeToCircle() {
+document.getElementById("changeCanvasBtn").addEventListener("click", function changeToCircle() {
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
     context.clearRect(0, 0, canvas.width, canvas.height);
