@@ -3,3 +3,12 @@ var context = canvas.getContext("2d");
 context.moveTo(0,0);
 context.lineTo(400,200);
 context.stroke();
+
+document.body.addEventListener("click", function changeToCircle() {
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    context.beginPath();
+    context.arc(99, 60, 30, 0, 2*Math.PI);
+    context.stroke();
+});
+
