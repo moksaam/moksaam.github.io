@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "https://moksaam.github.io/homepage/CS261Fluency.html",
+            "url": "https://moksaam.github.io/homepage/CIT261Fluency.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
