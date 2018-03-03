@@ -9,7 +9,7 @@ document.getElementById("changeCanvasBtn").addEventListener("click", function ch
     var context = canvas.getContext("2d");
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.beginPath();
-    context.arc(Math.random() * 1000, Math.random() * 1000, Math.random() * 100 + 1, 0, 2*Math.PI, false);
+    context.arc(Math.random() * 500, Math.random() * 300, Math.random() * 100 + 1, 0, 2*Math.PI, false);
     context.stroke();
 });
 
