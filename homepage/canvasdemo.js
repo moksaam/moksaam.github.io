@@ -8,7 +8,7 @@ document.body.addEventListener("click", function changeToCircle() {
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
     context.beginPath();
-    context.arc(99, 60, 30, 0, 2*Math.PI);
+    context.arc(50, 50, 100, 0, 2*Math.PI);
     context.stroke();
 });
 
