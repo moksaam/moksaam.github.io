@@ -1,8 +1,12 @@
-var canvas = document.getElementById("myCanvas");
-var context = canvas.getContext("2d");
-context.moveTo(0,0);
-context.lineTo(400,200);
-context.stroke();
+
+document.getElementById("drawLinesBtn").addEventListener("click", function drawLines() {
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    context.moveTo(Math.random() * 400, Math.random() * 200);
+    context.lineTo(Math.random() * 400, Math.random() * 200);
+    context.stroke();
+})
+
 
 document.getElementById("clearCanvasBtn").addEventListener("click", function clearCanvas() {
     context.clearRect(0, 0, canvas.width, canvas.height);
