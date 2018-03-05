@@ -1,4 +1,4 @@
-window.onload(var request = new XMLHttpRequest();
+var request = new XMLHttpRequest();
 request.overrideMimeType("application/json");
 request.open('GET', 'jsonex.json', false);
 request.send(null);
