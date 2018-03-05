@@ -8,9 +8,11 @@ request.onload = function parseJson() {
         var jsonOutput = document.getElementById("output_json");
     
         console.log("displayJson button pushed");
+        
         for (i in my_races_JSON_obj.races) {
             for (j in my_races_JSON_obj.races[i]) {                
                 for (k in my_races_JSON_obj.races[i].traits[j]) {
+                    console.log(my_races_JSON_obj.races[i].traits[j][k])                                        
                     x += "<p>" + my_races_JSON_obj.races[i].traits[j][k] + "</p>";
                 }
             } 
