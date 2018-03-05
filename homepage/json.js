@@ -12,7 +12,7 @@ request.onload = function parseJson() {
         for (i in my_races_JSON_obj.races) {
             x += "<h2>" + my_races_JSON_obj.races[i].name + "</h2>";
             for (j in my_races_JSON_obj.races[i]) {
-                if (my_races_JSON_obj.races[i][j]==name) {
+                if (my_races_JSON_obj.races[i][0]) {
                     x+= "<br>";
                 } else {
                     x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
