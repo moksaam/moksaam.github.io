@@ -11,7 +11,7 @@ request.onload = function parseJson() {
         
         for (i in my_races_JSON_obj.races) {
             for (j in my_races_JSON_obj.races[i]) {                                      
-                    x += "<p>" + my_races_JSON_obj.races[i] + "</p>";
+                    x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
             } 
         }
         jsonOutput.innerHTML = x;
