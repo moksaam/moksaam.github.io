@@ -1,7 +1,8 @@
-var request = new XMLHttpRequest();
+window.onload(var request = new XMLHttpRequest();
 request.overrideMimeType("application/json");
-request.open('GET', 'jsonex.json', true);
-request.onload = function () {
+request.open('GET', 'jsonex.json', false);
+request.send(null);
+request.onload = function parseJson() {
     var my_races_JSON_obj = JSON.parse(request.responseText);
     document.getElementById("parseTraitsBtn").onclick = function displayJson() {
         var i, j, k, x = 0;
@@ -28,7 +29,7 @@ request.send();
 var req = new XMLHttpRequest();
 req.overrideMimeType("application/json");
 req.open('GET', 'jsonex.json', true);
-req.onload = function () {
+req.onload = function parseTraits() {
     var my_races_JSON_obj = JSON.parse(req.responseText);
     document.getElementById("parseJsonBtn").onclick = function parseJsonFile(my_races_JSON_obj) {
         var i, j, x = 0;
