@@ -1,6 +1,6 @@
 var request = new XMLHttpRequest();
 request.overrideMimeType("application/json");
-request.open('GET', 'jsonex.json', false);
+request.open('GET', 'jsonex.json', true);
 request.onload = function parseJson() {
     var my_races_JSON_obj = JSON.parse(request.responseText);
     document.getElementById("parseTraitsBtn").onclick = function displayJson() {
