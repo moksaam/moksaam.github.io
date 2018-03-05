@@ -10,8 +10,9 @@ request.onload = function parseJson() {
         console.log("displayJson button pushed");
         
         for (i in my_races_JSON_obj.races) {
-            for (j in my_races_JSON_obj.races[i]) {                                      
-                    x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
+            for (j in my_races_JSON_obj.races[i]) {          
+                x += "<h2>" + my_races_JSON_obj.races[i].name + "</h2>";                            
+                x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
             } 
         }
         jsonOutput.innerHTML = x;
