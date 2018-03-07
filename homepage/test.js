@@ -3,7 +3,7 @@ var running = 0;
 
 function startTimer() {
     running = 1;
-    increment();
+    incrementTimer();
 }
 
 function stopTimer() {
@@ -14,10 +14,12 @@ function incrementTimer() {
     if(running == 1) {
         setTimeout(function () {
             time++;
-
-            document.getElementById("display").value = time;
-        increment();
-        }, 1000);
+            var mins = Math.floor(secs / 60);
+            var secs = Math.floor(time / 10);
+            var tenthSec = time % 10;
+            document.getElementById("display").value = mins + ":" + secs + ":" + "0" + tenthSec;
+            incrementTimer();
+        }, 100);
     }
 }
 
@@ -25,3 +27,7 @@ function resetTimer() {
     running = 0;
     time = 0;
 }
+
+document.getElementById("startBtn").onclick = startTimer();
+document.getElementById("stopBtn").onclick = stopTimer();
+document.getElementById("resetBtn").onclick = resetTimer();
