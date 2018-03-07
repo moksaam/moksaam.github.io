@@ -1,3 +1,4 @@
+window.onload = function () {
 var time = 0;
 var running = 0;
 
@@ -9,7 +10,9 @@ function startTimer() {
 }
 
 function stopTimer() {
-    running = 0;
+    if (running == 1){
+        running = 0;
+    }
 }
 
 function incrementTimer() {
@@ -41,3 +44,4 @@ function resetTimer() {
 document.getElementById("startBtn").onclick = startTimer();
 document.getElementById("stopBtn").onclick = stopTimer();
 document.getElementById("resetBtn").onclick = resetTimer();
+}
