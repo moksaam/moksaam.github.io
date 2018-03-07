@@ -17,7 +17,7 @@ function incrementTimer() {
             var mins = Math.floor(secs / 60);
             var secs = Math.floor(time / 10);
             var tenthSec = time % 10;
-            document.getElementById("display").value = mins + ":" + secs + ":" + "0" + tenthSec;
+            document.getElementById("test").innerHTML = mins + ":" + secs + ":" + "0" + tenthSec;
             incrementTimer();
         }, 100);
     }
