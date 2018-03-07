@@ -14,7 +14,7 @@ function incrementTimer() {
     if(running == 1) {
         setTimeout(function () {
             time++;
-            var mins = Math.floor(secs / 60);
+            var mins = Math.floor(time / 10 / 60);
             var secs = Math.floor(time / 10);
             var tenthSec = time % 10;
 
