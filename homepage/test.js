@@ -1,4 +1,4 @@
-window.onload = function () {
+
 var time = 0;
 var running = 0;
 
@@ -41,6 +41,7 @@ function resetTimer() {
     document.getElementById("test").innerHTML = "00:00:00";
 }
 
+window.onload = function () {
 document.getElementById("startBtn").onclick = startTimer();
 document.getElementById("stopBtn").onclick = stopTimer();
 document.getElementById("resetBtn").onclick = resetTimer();
