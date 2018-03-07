@@ -2,8 +2,10 @@ var time = 0;
 var running = 0;
 
 function startTimer() {
-    running = 1;
-    incrementTimer();
+    if (running == 0) {
+        running = 1;
+        incrementTimer();
+    }
 }
 
 function stopTimer() {
