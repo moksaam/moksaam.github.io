@@ -188,3 +188,9 @@ div.dropDownMenu a:hover {
     float: center;
     text-align: center;
 }
+
+#inputDiv {
+    background-color: gray;
+    padding: 5px;
+    
+}
