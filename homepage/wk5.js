@@ -36,7 +36,8 @@ retArrBtn.onclick = function retriveFromStorage() {
     //Check for Browser Support
     if (localStorage) {
         // Retrieve
-        arrDisplay.innerHTML = localStorage.getItem("demoArrayInput");
+        var output = JSON.parse(localStorage.getItem("demoArrayInput") || "[]");
+        arrDisplay.innerHTML = output;
     } else {
         arrDisplay.innerHTML = "Sorry, your browser does not support Web Storage...";
     }
