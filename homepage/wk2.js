@@ -1,6 +1,5 @@
 //Object Creation Function JS
-
-function showEquipment() {
+document.body.onload = function showEquipment() {
 
     var equipment = {};
     equipment.head = "Black Top Hat";
