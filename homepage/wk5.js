@@ -39,6 +39,7 @@ pushArr.onclick = function addToArray() {
     }
     arrInput.value = '';
     console.log(inputArray.length);
+    return inputArray;
 }
 
 arrStrgBtn.onlcick = function addToArrayStorage() {
@@ -52,7 +53,7 @@ retArrBtn.onclick = function retriveFromArrayStorage() {
     //Check for Browser Support
     if (localStorage) {
         // Retrieve
-        var output = JSON.parse(localStorage.getItem("demoArrayInput") || "[]");
+        var output = JSON.parse(localStorage.getItem("demoArrayInput"));
         console.log(output.length);
         arrDisplay.innerHTML = output;
     } else {
