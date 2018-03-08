@@ -30,6 +30,7 @@ arrStrgBtn.onclick = function addToStorage() {
     console.log("Added " + arrInput.value + " to array.");
     //Store Locally
     localStorage.setItem("demoArrayInput", JSON.stringify(arrInput.value));
+    arrInput.value = '';
 }
 
 retArrBtn.onclick = function retriveFromStorage() {
