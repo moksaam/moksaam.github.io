@@ -23,7 +23,7 @@ retrieveBtn.onclick = function retriveFromStorage() {
         display.innerHTML = "Sorry, your browser does not support Web Storage...";
     }
 }
-
+window.onload = function() {
 arrStrgBtn.onclick = function addToArrayStorage() {
     //Add to array
     if (arrInput.value == null) {
@@ -39,6 +39,7 @@ arrStrgBtn.onclick = function addToArrayStorage() {
     //Store Locally
     localStorage.setItem("demoArrayInput", JSON.stringify(arrInput.value));
     arrInput.value = '';
+}
 }
 
 retArrBtn.onclick = function retriveFromArrayStorage() {
