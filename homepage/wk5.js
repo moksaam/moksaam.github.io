@@ -6,7 +6,7 @@ var input = document.getElementById("localStorageIn");
 var arrStrgBtn = document.getElementById("localStorageArrBtn");
 var retArrBtn = document.getElementById("retrieveLocalStorageArrBtn");
 var arrDisplay = document.getElementById("displayArray");
-var arrInput = document.getElementById("demoArrayInput");
+var arrInput = document.getElementById("localStorageArrIn");
 var inputArray = [];
 
 storageBtn.onclick = function addToStorage() {
@@ -24,7 +24,6 @@ retrieveBtn.onclick = function retriveFromStorage() {
     }
 }
 
-window.onload = function() {
 arrStrgBtn.onclick = function addToArrayStorage() {
     //Add to array
     if (arrInput.value == null) {
@@ -42,7 +41,7 @@ arrStrgBtn.onclick = function addToArrayStorage() {
     localStorage.setItem("demoArrayInput", stringArr);
     arrInput.value = '';
 }
-}
+
 
 retArrBtn.onclick = function retriveFromArrayStorage() {
     //Check for Browser Support
