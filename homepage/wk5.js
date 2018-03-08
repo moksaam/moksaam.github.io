@@ -26,7 +26,7 @@ retrieveBtn.onclick = function retriveFromStorage() {
     }
 }
 
-pushArr.onclick = function addToArrayStorage() {
+pushArr.onclick = function addToArray() {
     //Add to array
     if (arrInput.value == null) {
         console.log("empty input");
