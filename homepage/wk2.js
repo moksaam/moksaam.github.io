@@ -1,5 +1,5 @@
 //Object Creation Function JS
-document.body.onload = function showEquipment() {
+document.getElementById("magicianOutfit").onload = function showEquipment() {
 
     var equipment = {};
     equipment.head = "Black Top Hat";
@@ -13,7 +13,7 @@ document.body.onload = function showEquipment() {
 };
 
 //Inheritance function
-document.body.onload = function adventurers() {
+document.getElementById("adventurers").onload = function adventurers() {
 
     function adventurer(_class, _race, _weapon, _armor) {
         this._class  = _class;
