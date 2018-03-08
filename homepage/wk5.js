@@ -38,6 +38,7 @@ pushArr.onclick = function addToArray() {
         console.log("Added " + arrInput.value + " to array.");
     }
     arrInput.value = '';
+    alert(inputArray.length);
 }
 
 arrStrgBtn.onlcick = function addToArrayStorage() {
