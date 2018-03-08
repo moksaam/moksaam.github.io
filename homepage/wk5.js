@@ -26,8 +26,16 @@ retrieveBtn.onclick = function retriveFromStorage() {
 
 arrStrgBtn.onclick = function addToStorage() {
     //Add to array
-    inputArray.push(arrInput.value);
-    console.log("Added " + arrInput.value + " to array.");
+    if (arrInput.value == null) {
+        console.log("empty input");
+        return;
+    } else if (arrInput.value == '') {
+        alert("Please enter a value!");
+    } else {
+        inputArray.push(arrInput.value);
+        console.log("Added " + arrInput.value + " to array.");
+    }
+    
     //Store Locally
     localStorage.setItem("demoArrayInput", JSON.stringify(arrInput.value));
     arrInput.value = '';
