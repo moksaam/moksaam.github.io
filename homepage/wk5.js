@@ -3,6 +3,7 @@ var storageBtn = document.getElementById("localStorageBtn");
 var retrieveBtn = document.getElementById("retrieveLocalStorageBtn");
 var display = document.getElementById("display");
 var input = document.getElementById("localStorageIn");
+var pushArr = document.getElementById("pushArrBtn");
 var arrStrgBtn = document.getElementById("localStorageArrBtn");
 var retArrBtn = document.getElementById("retrieveLocalStorageArrBtn");
 var arrDisplay = document.getElementById("displayArray");
@@ -25,7 +26,7 @@ retrieveBtn.onclick = function retriveFromStorage() {
     }
 }
 
-arrStrgBtn.onclick = function addToArrayStorage() {
+pushArr.onclick = function addToArrayStorage() {
     //Add to array
     if (arrInput.value == null) {
         console.log("empty input");
@@ -36,13 +37,14 @@ arrStrgBtn.onclick = function addToArrayStorage() {
         inputArray.push(arrInput.value);
         console.log("Added " + arrInput.value + " to array.");
     }
-
-    //Store Locally
-    var stringArr = JSON.stringify(arrInput.value);
-    localStorage.setItem("demoArrayInput", stringArr);
     arrInput.value = '';
 }
 
+arrStrgBtn.onlcick = function addToArrayStorage() {
+    //Store Locally
+    var stringArr = JSON.stringify(arrInput.value);
+    localStorage.setItem("demoArrayInput", stringArr);
+}
 
 retArrBtn.onclick = function retriveFromArrayStorage() {
     //Check for Browser Support
