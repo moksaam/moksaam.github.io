@@ -32,7 +32,7 @@ pushArr.onclick = function addToArray() {
         console.log("empty input");
         return;
     } else if (arrInput.value == '') {
-        alert("Please enter a value!");
+        console.log("Please enter a value!");
     } else {
         inputArray.push(arrInput.value);
         console.log("Added " + arrInput.value + " to array.");
