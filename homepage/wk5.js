@@ -24,7 +24,7 @@ retrieveBtn.onclick = function retriveFromStorage() {
     }
 }
 
-arrStrgBtn.onclick = function addToStorage() {
+arrStrgBtn.onclick = function addToArrayStorage() {
     //Add to array
     if (arrInput.value == null) {
         console.log("empty input");
@@ -35,13 +35,13 @@ arrStrgBtn.onclick = function addToStorage() {
         inputArray.push(arrInput.value);
         console.log("Added " + arrInput.value + " to array.");
     }
-    
+
     //Store Locally
     localStorage.setItem("demoArrayInput", JSON.stringify(arrInput.value));
     arrInput.value = '';
 }
 
-retArrBtn.onclick = function retriveFromStorage() {
+retArrBtn.onclick = function retriveFromArrayStorage() {
     //Check for Browser Support
     if (localStorage) {
         // Retrieve
