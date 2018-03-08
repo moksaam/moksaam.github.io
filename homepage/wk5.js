@@ -44,7 +44,7 @@ pushArr.onclick = function addToArray() {
 arrStrgBtn.onlcick = function addToArrayStorage() {
     //Store Locally
     var stringArr = JSON.stringify(inputArray);
-    
+    console.log(inputArray.length);
     localStorage.setItem("demoArrayInput", stringArr);
 }
 
