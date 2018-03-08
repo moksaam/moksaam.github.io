@@ -8,6 +8,7 @@ document.body.onload = function showEquipment() {
     equipment.hands = "White Gloves";
     equipment.feet = "Black Dress Shoes";
 
-    var magicianOutfit = "Head Worn: " + equipment.head + "Body Worn: " + equipment.body + "Back Worn: " + equipment.back + "Hands Worn: " + equipment.hands + "Feet Worn: " + equipment.feet;
+    var magicianOutfit = "Head Worn: " + equipment.head + ", Body Worn: " + equipment.body + ", Back Worn: " + equipment.back + ", Hands Worn: " + equipment.hands + ", Feet Worn: " + equipment.feet;
     document.getElementById("magicianOutfit").innerHTML += magicianOutfit;
 };
+
