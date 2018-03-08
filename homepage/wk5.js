@@ -38,7 +38,7 @@ pushArr.onclick = function addToArray() {
         console.log("Added " + arrInput.value + " to array.");
     }
     arrInput.value = '';
-    alert(inputArray.length);
+    console.log(inputArray.length);
 }
 
 arrStrgBtn.onlcick = function addToArrayStorage() {
@@ -53,7 +53,7 @@ retArrBtn.onclick = function retriveFromArrayStorage() {
     if (localStorage) {
         // Retrieve
         var output = JSON.parse(localStorage.getItem("demoArrayInput") || "[]");
-        alert(output.length);
+        console.log(output.length);
         arrDisplay.innerHTML = output;
     } else {
         arrDisplay.innerHTML = "Sorry, your browser does not support Web Storage...";
