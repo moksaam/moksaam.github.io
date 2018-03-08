@@ -23,6 +23,7 @@ retrieveBtn.onclick = function retriveFromStorage() {
         display.innerHTML = "Sorry, your browser does not support Web Storage...";
     }
 }
+
 window.onload = function() {
 arrStrgBtn.onclick = function addToArrayStorage() {
     //Add to array
@@ -37,7 +38,8 @@ arrStrgBtn.onclick = function addToArrayStorage() {
     }
 
     //Store Locally
-    localStorage.setItem("demoArrayInput", JSON.stringify(arrInput.value));
+    var stringArr = JSON.stringify(arrInput.value);
+    localStorage.setItem("demoArrayInput", stringArr);
     arrInput.value = '';
 }
 }
