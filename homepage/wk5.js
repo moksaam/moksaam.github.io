@@ -12,6 +12,7 @@ var inputArray = [];
 storageBtn.onclick = function addToStorage() {
     //Store Locally
     localStorage.setItem("demoInput", input.value);
+    input.value = '';
 }
 
 retrieveBtn.onclick = function retriveFromStorage() {
