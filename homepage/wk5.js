@@ -43,6 +43,7 @@ pushArr.onclick = function addToArray() {
 arrStrgBtn.onlcick = function addToArrayStorage() {
     //Store Locally
     var stringArr = JSON.stringify(arrInput.value);
+    
     localStorage.setItem("demoArrayInput", stringArr);
 }
 
@@ -51,6 +52,7 @@ retArrBtn.onclick = function retriveFromArrayStorage() {
     if (localStorage) {
         // Retrieve
         var output = JSON.parse(localStorage.getItem("demoArrayInput") || "[]");
+        alert(output.length);
         arrDisplay.innerHTML = output;
     } else {
         arrDisplay.innerHTML = "Sorry, your browser does not support Web Storage...";
