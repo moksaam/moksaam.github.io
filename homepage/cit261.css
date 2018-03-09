@@ -213,11 +213,11 @@ div.dropDownMenu a:hover {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     from {background-color: black;}
-    to {background-color: copper;}
+    to {background-color: #B87333;}
 }
 
 /* Standard syntax */
 @keyframes example {
     from {background-color: black;}
-    to {background-color: copper;}
+    to {background-color: #B87333;}
 }
