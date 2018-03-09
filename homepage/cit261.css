@@ -265,8 +265,9 @@ div.dropDownMenu a:hover {
 }
 
 @keyframes changes {
-    from {top: 10px;}
-    to {top: 500px;}
+    0% {top: 10px;}
+    50% {top: 250px;}
+    100% {top: 500px;}
 }
 
 #movediv {
