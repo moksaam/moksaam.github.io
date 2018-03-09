@@ -18,7 +18,6 @@ function parseJson(my_races_JSON_obj) {
         // Loop throught the object and create our HTML page
         for (races in my_races_JSON_obj.races) {
             x += "<div class='JSONexampleContainer'>";
-            x += "<h2>" + my_races_JSON_obj + "</h2>";
             x += "<h3>Name: " + my_races_JSON_obj.races[races].name + "</h3>";
             x += "<h3>Ability Scores: </h3><p>" + my_races_JSON_obj.races[races].ability_scores + "</p>";
             x += "<h3>Age: </h3><p>" + my_races_JSON_obj.races[races].age +  "</p>";
