@@ -2,5 +2,5 @@
 var divs = document.querySelectorAll("div");
 
 document.getElementById("changeAllDivsColor").onclick = function colorChangeDivs() {
-    divs.style.backgroundColor = violet;
+    divs.style.backgroundColor = "violet";
 }
