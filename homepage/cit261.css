@@ -133,6 +133,11 @@ div.dropDownMenu a:hover {
 #output_json {
     width: 100%;
 }
+
+.JSONexampleContainer {
+    text-align: left;
+}
+
 .cool_buttons {
     background-color: wheat;
     color: rgb(114, 101, 196);
