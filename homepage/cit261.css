@@ -252,7 +252,7 @@ div.dropDownMenu a:hover {
 @keyframes example2 {
     0%   {background-color: paleturquoise; left:20px; top:20px;}
     25%  {background-color: palevioletred; left:75%; top:20px;}
-    50%  {background-color: limegreen; left:75%; top:75%;}
-    75%  {background-color: lemonchiffon; left:20px; top:75%;}
+    50%  {background-color: limegreen; left:75%; top:200px;}
+    75%  {background-color: lemonchiffon; left:20px; top:200px;}
     100% {background-color: seagreen; left:20px; top:20px;}
 }
