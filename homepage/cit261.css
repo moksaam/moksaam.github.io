@@ -68,6 +68,9 @@ a.menu:hover {
 }
 
 div.example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: wheat;
     background: gray;
@@ -225,9 +228,6 @@ div.dropDownMenu a:hover {
 }
 
 #exampleCSS2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: cyan;
     width: 200px;
     height: 200px;
@@ -261,9 +261,6 @@ div.dropDownMenu a:hover {
 }
 
 #exampleCSS3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 200px;
     height: 200px;
     background-color: pink;
