@@ -281,6 +281,13 @@ div.dropDownMenu a:hover {
     justify-content: center;
 }
 
+.transitionEx {
+    display: inline-flex;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+}
+
 #transition1 {
     width: 200px;
     height: 200px;
@@ -295,4 +302,20 @@ div.dropDownMenu a:hover {
     background: purple;
     font-size: 32px;
     text-align: center;
+}
+
+#transition2 {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    font-size: 12px;
+    transition: width 4s, height 3s, font-size 5s, transform 10s;
+}
+
+#transition2:hover {
+    width: 400px;
+    height: 400px;
+    font-size: 32px;
+    text-align: center;
+    transform: rotate(720deg);
 }
