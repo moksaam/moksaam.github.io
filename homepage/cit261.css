@@ -68,9 +68,6 @@ a.menu:hover {
 }
 
 div.example {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     color: wheat;
     background: gray;
@@ -272,4 +269,12 @@ div.dropDownMenu a:hover {
 @keyframes changes {
     from {top: 30px;}
     to {top: 500px;}
+}
+
+#movdiv {
+    height: 300px;
+}
+
+#cssdiv {
+    height: 600px;
 }
