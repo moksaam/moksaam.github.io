@@ -280,3 +280,20 @@ div.dropDownMenu a:hover {
     align-items: center;
     justify-content: center;
 }
+
+#transition1 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    font-size: 12px;
+    transition: width 2s;
+    transition: height 2s;
+    transition: font-size 2s;
+}
+
+#transition1:hover {
+    width: 400px;
+    height: 400px;
+    background: purple;
+    font-size: 18px;
+}
