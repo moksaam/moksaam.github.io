@@ -1,6 +1,6 @@
 // This function will change the background of all the divs on this page.
-var divs = document.querySelectorAll("div");
-
 document.getElementById("changeAllDivsColor").onclick = function colorChangeDivs() {
-    divs.style.backgroundColor = "violet";
+    var divs = document.querySelectorAll("div");
+    for (var i = 0; i < divs.length; i++)
+    divs[i].style.backgroundColor = "violet";
 }
