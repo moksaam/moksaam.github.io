@@ -17,7 +17,7 @@ document.getElementById("changePFont").onclick = function changePFont() {
 
 // This function will change the color and location of the mani1 div
 document.getElementById("changeMani1Div").onclick = function changeMani1() {
-    var mani1 = docment.getElementById("mani1");
+    var mani1 = document.getElementById("mani1");
     mani1.style.backgroundColor = "blue";
     mani1.style.position = "absolute";
     mani1.style.top = "300px";
