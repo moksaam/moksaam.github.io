@@ -27,7 +27,8 @@ function parseJson(my_races_JSON_obj) {
             x += "<ul class='left_align'><h3>Traits: </h3>"
             for (traits in my_races_JSON_obj.races[races].traits) {
                 x += "<li><h4>" + my_races_JSON_obj.races[races].traits[traits].tname +  ":</h4><p> " + my_races_JSON_obj.races[races].traits[traits].tdesc +"</p></li>";
-            };            
+            }; 
+            X += "<h3>Languages: </h3><p>" + my_races_JSON_obj.races[races].languages + "</p>"           ;
             x += "</div>";
             
             document.getElementById("stringifyEx").innerHTML = JSON.stringify(my_races_JSON_obj);
