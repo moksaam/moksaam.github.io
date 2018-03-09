@@ -39,6 +39,7 @@ document.getElementById("showDiv").onclick = function showDiv() {
 // This function will change the size and color of mani3
 document.getElementById("resizeDiv").onclick = function resizeDiv() {
     var mani3 = document.getElementById("mani3");
+    mani3.style.position = "relative";
     mani3.style.height = "500px";
     mani3.style.width = "500px";
     mani3.style.backgroundColor = "silver";
