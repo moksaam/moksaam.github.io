@@ -42,4 +42,5 @@ request.send();
 document.getElementById("resetFieldBtn").onclick = function resetField() {
     var field = document.getElementById("output_json");
     field.innerHTML = '';
+    document.getElementById("stringifyEx").innerHTML = '';
 }
