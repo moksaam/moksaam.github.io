@@ -281,11 +281,13 @@ div.dropDownMenu a:hover {
     justify-content: center;
 }
 
-.transitionEx {
+.transitionContainer {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
+    
     
 }
 
