@@ -5,5 +5,5 @@ div.onclick = function transitionDiv() {
     div.setAttribute("style", "height: 20px");
     div.setAttribute("style", "width 20px");
     div.setAttribute("style", "font-size 8px");
-}
+};
 
