@@ -17,8 +17,8 @@ function parseJson(my_races_JSON_obj) {
         console.log("displayJson button pushed");
         
         for (races in my_races_JSON_obj.races) {
-            //x += "<div class='example'>";
-            x += "<h2>Name: " + my_races_JSON_obj.races[races].name + "</h2><br>";
+            x += "<div class='JSONexampleContainer'>";
+            x += "<h2>Name: " + my_races_JSON_obj.races[races].name + "</h2>";
             x += "<h3>Ability Scores: </h3><p>" + my_races_JSON_obj.races[races].ability_scores + "</p><br>";
             x += "<h3>Age: </h3><p>" + my_races_JSON_obj.races[races].age +  "</p><br>";
             x += "<h3>Alignment: </h3><p>" + my_races_JSON_obj.races[races].alignment + "</p><br>";
@@ -28,7 +28,7 @@ function parseJson(my_races_JSON_obj) {
             for (traits in my_races_JSON_obj.races[races].traits) {
                 x += "<li><h3>" + my_races_JSON_obj.races[races].traits[traits].tname +  ":</h3><p> " + my_races_JSON_obj.races[races].traits[traits].tdesc +"</p></li>";
             };            
-            //x += "</div>";
+            x += "</div>";
             /*for (j in my_races_JSON_obj.races[i]) {
                 if (my_races_JSON_obj.races[i][0]) {
                     x+= "<br>";
