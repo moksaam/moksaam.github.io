@@ -23,3 +23,9 @@ document.getElementById("changeMani1Div").onclick = function changeMani1() {
     mani1.style.top = "300px";
     mani1.style.left = "300px";
 }
+
+// This function will hide the mani2 div
+document.getElementById("hideDiv").onclick = function hideDiv() {
+    var mani2 = document.getElementById("mani2");
+    mani2.style.visibility = "hidden";
+}
