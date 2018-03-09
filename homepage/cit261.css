@@ -200,6 +200,9 @@ div.dropDownMenu a:hover {
     width: 100px;
     height: 100px;
     position: absolute;
+}
+
+#exampleCSS:hover {
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
@@ -208,12 +211,12 @@ div.dropDownMenu a:hover {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-    from {background-color: red;}
+    from {background-color: black;}
     to {background-color: yellow;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    from {background-color: red;}
+    from {background-color: black;}
     to {background-color: yellow;}
 }
