@@ -30,10 +30,11 @@ function parseJson(my_races_JSON_obj) {
             };            
             x += "</div>";
             
-        document.getElementById("stringifyEx").innerHTML = JSON.stringify(my_races_JSON_obj);
-        jsonOutput.innerHTML = x;
-    }
+            document.getElementById("stringifyEx").innerHTML = JSON.stringify(my_races_JSON_obj);
+            jsonOutput.innerHTML = x;
+        }   
     console.log(my_races_JSON_obj);
+    }
 }
 request.send();
 
