@@ -53,7 +53,7 @@ retArrBtn.onclick = function retriveFromArrayStorage() {
     //Check for Browser Support
     if (localStorage) {
         // Retrieve
-        var output = JSON.parse(localStorage.getItem("demoArrayInput"));
+        var output = "Your array includes the following: " + JSON.parse(localStorage.getItem("demoArrayInput"));
         console.log(output.length);
         arrDisplay.innerHTML = output;
     } else {
