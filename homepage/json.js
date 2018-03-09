@@ -24,7 +24,7 @@ function parseJson(my_races_JSON_obj) {
             x += "<h3>Alignment: </h3><p>" + my_races_JSON_obj.races[races].alignment + "</p>";
             x += "<h3>Size: </h3><p>" + my_races_JSON_obj.races[races].size + "</p>";
             x += "<h3>Speed: </h3><p>" + my_races_JSON_obj.races[races].speed + "</p>";
-            x += "<ul><h3>Traits: </h3>"
+            x += "<ul class='left_align'><h3>Traits: </h3>"
             for (traits in my_races_JSON_obj.races[races].traits) {
                 x += "<li><h3>" + my_races_JSON_obj.races[races].traits[traits].tname +  ":</h3><p> " + my_races_JSON_obj.races[races].traits[traits].tdesc +"</p></li>";
             };            

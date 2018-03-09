@@ -138,6 +138,10 @@ div.dropDownMenu a:hover {
     text-align: left;
 }
 
+.left_align {
+    text-align: left;
+}
+
 .cool_buttons {
     background-color: wheat;
     color: rgb(114, 101, 196);
