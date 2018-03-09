@@ -271,10 +271,13 @@ div.dropDownMenu a:hover {
     to {top: 500px;}
 }
 
-#movdiv {
+#movediv {
     height: 500px;
 }
 
 #cssdiv {
     height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
