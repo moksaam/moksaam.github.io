@@ -2,6 +2,8 @@ var div = document.getElementById("transition3");
 
 div.onmouseover = function transitionDiv() {
     div.style.transition = "width 4s, height 4s, font-size 5s";
-    div.style.transition = "height 20px, width 20px, font-size 8px";
+    div.setAttribute("style", "height: 20px");
+    div.setAttribute("style", "width 20px");
+    div.setAttribute("style", "font-size 8px");
 }
 
