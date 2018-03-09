@@ -20,13 +20,13 @@ function parseJson(my_races_JSON_obj) {
             //x += "<div class='example'>";
             x += "<h2>Name: " + my_races_JSON_obj.races[races].name + "</h2><br>";
             x += "<h3>Ability Scores: </h3><p>" + my_races_JSON_obj.races[races].ability_scores + "</p><br>";
-            x += "<h3>Age: </h3><p>" + my_races_JSON_obj[races].age +  "</p><br>";
-            x += "<h3>Alignment: </h3><p>" + my_races_JSON_obj[races].alignment + "</p><br>";
-            x += "<h3>Size: </h3><p>" + my_races_JSON_obj[races].size + "</p><br>";
-            x += "<h3>Speed: </h3><p>" + my_races_JSON_obj[races].speed + "</p><br>";
+            x += "<h3>Age: </h3><p>" + my_races_JSON_obj.races[races].age +  "</p><br>";
+            x += "<h3>Alignment: </h3><p>" + my_races_JSON_obj.races[races].alignment + "</p><br>";
+            x += "<h3>Size: </h3><p>" + my_races_JSON_obj.races[races].size + "</p><br>";
+            x += "<h3>Speed: </h3><p>" + my_races_JSON_obj.races[races].speed + "</p><br>";
             x += "<ul><h3>Traits: </h3>"
-            for (traits in my_races_JSON_obj[races].traits) {
-                x += "<li><h3>" + my_races_JSON_obj[races].traits[traits].tname +  ":</h3><p> " + my_races_JSON_obj[races].traits[traits].tdesc +"</p></li>";
+            for (traits in my_races_JSON_obj.races[races].traits) {
+                x += "<li><h3>" + my_races_JSON_obj.races[races].traits[traits].tname +  ":</h3><p> " + my_races_JSON_obj.races[races].traits[traits].tdesc +"</p></li>";
             };            
             //x += "</div>";
             /*for (j in my_races_JSON_obj.races[i]) {
