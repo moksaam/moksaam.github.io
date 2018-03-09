@@ -262,17 +262,17 @@ div.dropDownMenu a:hover {
     height: 200px;
     background-color: pink;
     position: relative;
-    top: 75%;
+    top: 10px;
     left: 45%
 }
 
 @keyframes changes {
-    from {top: 30px;}
+    from {top: 10px;}
     to {top: 500px;}
 }
 
 #movdiv {
-    height: 300px;
+    height: 500px;
 }
 
 #cssdiv {
