@@ -224,7 +224,7 @@ div.dropDownMenu a:hover {
     to {background-color: #B87333;}
 }
 
-#example2 {
+#exampleCSS2 {
     background-color: cyan;
     width: 200px;
     height: 200px;
@@ -257,10 +257,11 @@ div.dropDownMenu a:hover {
     100% {background-color: seagreen; left:20px; top:20px;}
 }
 
-#example3 {
+#exampleCSS3 {
     width: 100px;
     height: 100px;
     background-color: pink;
+    position: relative;
 }
 
 @keyframes changes {

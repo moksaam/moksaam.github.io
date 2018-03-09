@@ -1,16 +1,17 @@
-var div = document.getElementById("example3");
+var div = document.getElementById("exampleCSS3");
 
 div.onclick = function animateDiv() {
     div.style.animation = "changes 5s 3";
 }
 
-div.addEventListener("animationStart", startFunction);
-div.addEventListener("animationRepeat", rptFunction);
-div.addEventListener("animationEnd", stopFunction);
+div.addEventListener("animationstart", startFunction);
+div.addEventListener("animationiteration", rptFunction);
+div.addEventListener("animationend", stopFunction);
 
 function startFunction() {
     this.style.height = "400px";
     this.style.width = "400px";
+    this.style.backgroundColor = "fuscia";
 }
 
 function rptFunction() {
@@ -22,4 +23,5 @@ function rptFunction() {
 function stopFunction() {
     this.style.height = "200px";
     this.style.width = "200px";
+    this.style.backgroundColor = "steelblue";
 }
