@@ -262,8 +262,6 @@ div.dropDownMenu a:hover {
     height: 200px;
     background-color: pink;
     position: relative;
-    top: 10px;
-    left: 45%
 }
 
 @keyframes changes {
