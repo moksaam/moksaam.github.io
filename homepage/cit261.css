@@ -207,16 +207,17 @@ div.dropDownMenu a:hover {
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     from {background-color: black;}
-    to {background-color: whitesmoke;}
+    to {background-color: copper;}
 }
 
 /* Standard syntax */
 @keyframes example {
     from {background-color: black;}
-    to {background-color: whitesmoke;}
+    to {background-color: copper;}
 }
