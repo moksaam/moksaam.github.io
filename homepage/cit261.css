@@ -231,25 +231,25 @@ div.dropDownMenu a:hover {
     position: relative;
     left: 20px;
     top: 20px;
-    -webkit-animation-name: example2;
+    -webkit-animation-name: exampleCSS2;
     -webkit-animation-duration: 5s;
     -webkit-animation-delay: 5s;
     -webkit-animation-iteration-count: infinite;
-    animation-name: example2;
+    animation-name: exampleCSS2;
     animation-duration: 5s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example2 {
+@-webkit-keyframes exampleCSS2 {
     0%   {background-color: paleturquoise; left:20px; top:20px;}
     25%  {background-color: palevioletred; left:100%; top:20px;}
     50%  {background-color: limegreen; left:100%; top:100%;}
     75%  {background-color: lemonchiffon; left:20px; top:100%;}
     100% {background-color: seagreen; left:20px; top:20px;}
 }
-@keyframes example2 {
+@keyframes exampleCSS2 {
     0%   {background-color: paleturquoise; left:20px; top:20px;}
     25%  {background-color: palevioletred; left:75%; top:20px;}
     50%  {background-color: limegreen; left:75%; top:200px;}
@@ -258,10 +258,12 @@ div.dropDownMenu a:hover {
 }
 
 #exampleCSS3 {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: pink;
     position: relative;
+    top: 20px;
+    left: 50px;
 }
 
 @keyframes changes {
