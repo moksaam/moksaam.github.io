@@ -15,28 +15,21 @@ function parseJson(my_races_JSON_obj) {
         var jsonOutput = document.getElementById("output_json");
         var x;
         console.log("displayJson button pushed");
-        
+        // Loop throught the object and create our HTML page
         for (races in my_races_JSON_obj.races) {
             x += "<div class='JSONexampleContainer'>";
-            x += "<h2>Name: " + my_races_JSON_obj.races[races].name + "</h2>";
-            x += "<h3>Ability Scores: </h3><p>" + my_races_JSON_obj.races[races].ability_scores + "</p><br>";
-            x += "<h3>Age: </h3><p>" + my_races_JSON_obj.races[races].age +  "</p><br>";
-            x += "<h3>Alignment: </h3><p>" + my_races_JSON_obj.races[races].alignment + "</p><br>";
-            x += "<h3>Size: </h3><p>" + my_races_JSON_obj.races[races].size + "</p><br>";
-            x += "<h3>Speed: </h3><p>" + my_races_JSON_obj.races[races].speed + "</p><br>";
+            x += "<h3>Name: " + my_races_JSON_obj.races[races].name + "</h3>";
+            x += "<h3>Ability Scores: </h3><p>" + my_races_JSON_obj.races[races].ability_scores + "</p>";
+            x += "<h3>Age: </h3><p>" + my_races_JSON_obj.races[races].age +  "</p>";
+            x += "<h3>Alignment: </h3><p>" + my_races_JSON_obj.races[races].alignment + "</p>";
+            x += "<h3>Size: </h3><p>" + my_races_JSON_obj.races[races].size + "</p>";
+            x += "<h3>Speed: </h3><p>" + my_races_JSON_obj.races[races].speed + "</p>";
             x += "<ul><h3>Traits: </h3>"
             for (traits in my_races_JSON_obj.races[races].traits) {
                 x += "<li><h3>" + my_races_JSON_obj.races[races].traits[traits].tname +  ":</h3><p> " + my_races_JSON_obj.races[races].traits[traits].tdesc +"</p></li>";
             };            
             x += "</div>";
-            /*for (j in my_races_JSON_obj.races[i]) {
-                if (my_races_JSON_obj.races[i][0]) {
-                    x+= "<br>";
-                } else {
-                    x += "<p>" + my_races_JSON_obj.races[i][j] + "</p>";
-                }
-            } */
-        }
+            
         document.getElementById("stringifyEx").innerHTML = JSON.stringify(my_races_JSON_obj);
         jsonOutput.innerHTML = x;
     }
