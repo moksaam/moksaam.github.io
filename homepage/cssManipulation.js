@@ -29,3 +29,9 @@ document.getElementById("hideDiv").onclick = function hideDiv() {
     var mani2 = document.getElementById("mani2");
     mani2.style.visibility = "hidden";
 }
+
+// This function will show mani2 div
+document.getElementById("showDiv").onclick = function showDiv() {
+    var mani2 = document.getElementById("mani2");
+    mani2.style.visibility = "visible";
+}
