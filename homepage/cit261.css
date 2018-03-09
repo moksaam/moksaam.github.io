@@ -199,25 +199,60 @@ div.dropDownMenu a:hover {
     background-color: black;
     width: 200px;
     height: 200px;
-    position: absolute;
+    position: relative;
+    left: 20px;
+    top: 20px;
 }
 
 #exampleCSS:hover {
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    animation-name: exampleCSS;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
+@-webkit-keyframes exampleCSS {
     from {background-color: black;}
     to {background-color: #B87333;}
 }
 
 /* Standard syntax */
-@keyframes example {
+@keyframes exampleCSS {
     from {background-color: black;}
     to {background-color: #B87333;}
+}
+
+#example2 {
+    background-color: cyan;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    -webkit-animation-name: example2;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes exampleCSS {
+    0%   {background-color: paleturquoise; left:20px; top:20px;}
+    25%  {background-color: palevioletred; left:100%; top:20px;}
+    50%  {background-color: limegreen; left:100%; top:100%;}
+    75%  {background-color: lemonchiffon; left:20px; top:100%;}
+    100% {background-color: seagreen; left:20px; top:20px;}
+}
+@keyframes example2 {
+    0%   {background-color: paleturquoise; left:20px; top:20px;}
+    25%  {background-color: palevioletred; left:100%; top:20px;}
+    50%  {background-color: limegreen; left:100%; top:100%;}
+    75%  {background-color: lemonchiffon; left:20px; top:100%;}
+    100% {background-color: seagreen; left:20px; top:20px;}
 }
