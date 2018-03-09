@@ -343,7 +343,7 @@ div.dropDownMenu a:hover {
     transition: width 4s, height 4s, font-size 5s;
 }
 
-#transition3:action {
+#transition3:active {
     height: 20px;
     width: 20px;
     font-size: 8px;
