@@ -305,7 +305,7 @@ div.dropDownMenu a:hover {
     width: 200px;
     height: 200px;
     background: blue;
-    font-size: 12px;
+    font-size: 18px;
     transition: width 4s, height 3s, font-size 5s;
 }
 
@@ -314,14 +314,13 @@ div.dropDownMenu a:hover {
     height: 400px;
     background: purple;
     font-size: 32px;
-    text-align: center;
 }
 
 #transition2 {
     width: 200px;
     height: 200px;
     background: yellow;
-    font-size: 12px;
+    font-size: 18px;
     color: purple;
     transition: width 4s, height 3s, font-size 5s, transform 10s;
     transition-delay: 2s;
