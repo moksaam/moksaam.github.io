@@ -310,6 +310,8 @@ div.dropDownMenu a:hover {
     background: yellow;
     font-size: 12px;
     transition: width 4s, height 3s, font-size 5s, transform 10s;
+    transition-delay: 2s;
+    transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 #transition2:hover {
