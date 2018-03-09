@@ -256,3 +256,14 @@ div.dropDownMenu a:hover {
     75%  {background-color: lemonchiffon; left:20px; top:200px;}
     100% {background-color: seagreen; left:20px; top:20px;}
 }
+
+#example3 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+@keyframes changes {
+    from {top: 20px;}
+    to {top: 300px;}
+}
