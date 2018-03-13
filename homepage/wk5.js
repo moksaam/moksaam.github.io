@@ -86,11 +86,12 @@ addHeroBtn.onclick = function superHero() {
 }
 
 showHeroBtn.onclick = function showHero() {
+    var output;
     if (localStorage) {
         // Retrieve
         var jsonOBJ = JSON.parse(localStorage.getItem("superHeroObj"));
         for (var i = 0; i < jsonOBJ.length; i++) {
-            var output += "Name: " + jsonOBJ[i].regName + "<br>Super Hero Name: " + jsonOBJ[i].superName + "<br>Super Power: " + jsonOBJ[i].superPower;
+            output += "Name: " + jsonOBJ[i].regName + "<br>Super Hero Name: " + jsonOBJ[i].superName + "<br>Super Power: " + jsonOBJ[i].superPower;
         }
         console.log(output.length);
         displayObj.innerHTML = output;
