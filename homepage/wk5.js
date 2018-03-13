@@ -94,7 +94,7 @@ showHeroBtn.onclick = function showHero() {
         for (var i = 0; i < jsonOBJ.length; i++) {
             output += "Name: " + jsonOBJ[i].regName + "<br>Super Hero Name: " + jsonOBJ[i].superName + "<br>Super Power: " + jsonOBJ[i].superPower;
         }
-        console.log(output.length);
+        console.log(jsonOBJ.length);
         displayObj.innerHTML = output;
     } else {
         displayObj.innerHTML = "Sorry, your browser does not support Web Storage...";
