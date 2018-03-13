@@ -83,6 +83,7 @@ addHeroBtn.onclick = function superHero() {
     document.getElementById("rNameID").value = '';
     document.getElementById("sNameID").value = '';
     document.getElementById("sPowerID").value = '';
+    }  
 }
 
 showHeroBtn.onclick = function showHero() {
