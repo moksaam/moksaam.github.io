@@ -37,12 +37,13 @@ pushArr.onclick = function addToArray() {
         inputArray.push(arrInput.value);
         console.log("Added " + arrInput.value + " to array.");
     }
+    addToArrayStorage(inputArray);
     arrInput.value = '';
     console.log(inputArray.length);
     return inputArray;
 }
 
-arrStrgBtn.onlcick = function addToArrayStorage(inputArray) {
+function addToArrayStorage(inputArray) {
     //Store Locally
     var stringArr = JSON.stringify(inputArray);
     console.log(inputArray.length);
