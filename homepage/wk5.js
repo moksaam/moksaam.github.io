@@ -72,12 +72,13 @@ addHeroBtn.onclick = function superHero() {
 
     var jsonString = JSON.stringify(superHeroObj);
 
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.setItem("superHeroObj", jsonString));
-        console.log(superHeroObj);
-    } else {
-        displayObj.innerHTML = "Sorry, your browser does not support Web Storage...";
-    }
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.getItem("jsonstring") === null) {
+
+            localStorage.setItem("jsonstring", JSON.stringify(userinfoobj));
+        } else {
+            localStorage.setItem("jsonstring", localStorage.getItem("jsonstring") + "," + JSON.stringify(userinfoobj));
+        }
 
     document.getElementById("rNameID").value = '';
     document.getElementById("sNameID").value = '';
@@ -87,7 +88,10 @@ addHeroBtn.onclick = function superHero() {
 showHeroBtn.onclick = function showHero() {
     if (localStorage) {
         // Retrieve
-        var output = "Here is the Super Hero obj: " + JSON.parse(localStorage.getItem("superHeroObj"));
+        var jsonOBJ = JSON.parse(localStorage.getItem("superHeroObj"));
+        for (var i = 0; i < jsonOBJ.length; i++) {
+            var output += "Name: " + jsonOBJ[i].regName + "<br>Super Hero Name: " + jsonOBJ[i].superName + "<br>Super Power: " + jsonOBJ[i].superPower;
+        }
         console.log(output.length);
         displayObj.innerHTML = output;
     } else {
