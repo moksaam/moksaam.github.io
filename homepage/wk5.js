@@ -73,11 +73,11 @@ addHeroBtn.onclick = function superHero() {
     var jsonString = JSON.stringify(superHeroObj);
 
     if(typeof(Storage) !== "undefined") {
-        if (localStorage.getItem("jsonstring") === null) {
+        if (localStorage.getItem("jsonString") === null) {
 
-            localStorage.setItem("jsonstring", JSON.stringify(userinfoobj));
+            localStorage.setItem("jsonString", JSON.stringify(superHeroObj));
         } else {
-            localStorage.setItem("jsonstring", localStorage.getItem("jsonstring") + "," + JSON.stringify(userinfoobj));
+            localStorage.setItem("jsonString", localStorage.getItem("jsonString") + "," + JSON.stringify(superHeroObj));
         }
 
     document.getElementById("rNameID").value = '';
