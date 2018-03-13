@@ -66,9 +66,9 @@ retArrBtn.onclick = function retriveFromArrayStorage() {
 }
 
 addHeroBtn.onclick = function superHero() {
-    superHeroObj.regName = document.getElementById("regName").value;
-    superHeroObj.supName = document.getElementById("superName").value;
-    superHeroObj.suPower = document.getElementById("superPower").value;
+    superHeroObj.regName = document.getElementById("rNameID").value;
+    superHeroObj.superName = document.getElementById("sNameID").value;
+    superHeroObj.superPower = document.getElementById("sPowerID").value;
 
     var jsonString = JSON.stringify(superHeroObj);
 
@@ -79,9 +79,9 @@ addHeroBtn.onclick = function superHero() {
         displayObj.innerHTML = "Sorry, your browser does not support Web Storage...";
     }
 
-    document.getElementById("regName").value = '';
-    document.getElementById("superName").value = '';
-    document.getElementById("superPower").value = '';
+    document.getElementById("rNameID").value = '';
+    document.getElementById("sNameID").value = '';
+    document.getElementById("sPowerID").value = '';
 }
 
 showHeroBtn.onclick = function showHero() {
