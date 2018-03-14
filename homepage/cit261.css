@@ -376,3 +376,22 @@ div.dropDownMenu a:hover {
     width: 500px;
     background: gold;
 }
+
+.transformEx {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    background: thistle;
+}
+
+#rotate_45 {
+    transform: rotate(45deg);
+}
+
+#skewY_25 {
+    transform: skewY(25deg);
+}
+
+#scaleX_3 {
+    transform: scaleX(3);
+}
