@@ -8,10 +8,17 @@ document.getElementById("createElementBtn").onclick = function createElement() {
 }
 
 document.getElementById("appendChildBtn").onclick = function appendChild() {
+    var filled = 0;
     var newP = document.createElement("P");
     var newText = document.createTextNode("Here is our new p element.");
     newP.appendChild(newText);
-    document.getElementById("addText").appendChild(newP);
+    if (filled == 0) {
+        document.getElementById("addText").appendChild(newP);
+        filled = 1;
+    } else {
+        alert("The div element is full.");
+    }
+    
     bodyDiv();
 }
 
