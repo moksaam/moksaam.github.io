@@ -23,7 +23,10 @@ function bodyDiv() {
 }
 
 document.getElementById("insertBeforeBtn").onclick = function insertBefore() {
-
+    var firstDiv = document.createElement("div");
+    fistDiv.className = "goldDiv";
+    var currentDiv = document.getElementById("divContainer");
+    document.body.insertBefore(firstDiv, currentDiv);
 }
 
 document.getElementById("removeChildBtn").onclick = function removeChild() {
