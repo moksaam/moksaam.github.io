@@ -1,3 +1,4 @@
+var created;
 // Creating our functions to alter the DOM
 document.getElementById("createElementBtn").onclick = function createElement() {
     // Creating a new DIV
@@ -5,13 +6,13 @@ document.getElementById("createElementBtn").onclick = function createElement() {
     newDiv.id = "addText";
     newDiv.className = "childDiv";
     document.getElementById("divContainer").appendChild(newDiv);
-    var created = 1;
-    return created;
+    
+    created = 1;
 }
 
 document.getElementById("appendChildBtn").onclick = function appendChild(created) {
-    var filled = 0;
-    if (created) {
+    var filled;
+    if (created == 1) {
         var newP = document.createElement("P");
         var newText = document.createTextNode("Here is our new p element.");
         newP.appendChild(newText);
