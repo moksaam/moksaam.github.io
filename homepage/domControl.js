@@ -2,7 +2,6 @@
 document.getElementById("createElementBtn").onclick = function createElement() {
     // Creating a new DIV
     var newDiv = document.createElement("div");
-    newDiv.id = "addText";
     newDiv.className = "childDiv";
     document.getElementById("divContainer").appendChild(newDiv);
 }
@@ -13,11 +12,7 @@ document.getElementById("appendChildBtn").onclick = function appendChild() {
         var newP = document.createElement("P");
         var newText = document.createTextNode("Here is our new p element.");
         newP.appendChild(newText);
-        if (document.getElementById("addText").appendChild(newP)) {
-            alert("The div element is full.");
-        } else {
-            document.getElementById("addText").appendChild(newP);
-        }
+        document.getElementById("addText").appendChild(newP);        
     }    
     else {
         alert("No Parent Div has been created yet.")
@@ -28,6 +23,7 @@ document.getElementById("appendChildBtn").onclick = function appendChild() {
 function bodyDiv() {    
     // Creating a new DIV
     var newDiv = document.createElement("div");
+    newDiv.id = "addText";
     newDiv.className = "secondChildDiv";
     document.body.appendChild(newDiv);
 }
