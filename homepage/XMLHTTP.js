@@ -7,7 +7,7 @@ if ('withCredentials' in xmlhttp) {
             parseJSON(obj);
         }
     };
-    xmlhttp.open("GET", "http://pokeapi.co/api/v2/pokemon/26", true);
+    xmlhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/26", true);
     xmlhttp.send();
 }
 
