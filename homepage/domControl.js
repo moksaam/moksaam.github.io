@@ -11,7 +11,8 @@ document.getElementById("appendChildBtn").onclick = function appendChild() {
     var newP = document.createElement("P");
     var newText = document.createTextNode("Here is our new p element.");
     newP.appendChild(newText);
-    document.getElementsByClassName("childDiv").appendChild(newP);
+    var childDiv = document.getElementsByClassName("childDiv");
+    childDiv.appendChild(newP);
 }
 
 function bodyDiv() {    
