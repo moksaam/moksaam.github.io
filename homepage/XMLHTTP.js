@@ -11,10 +11,17 @@ if ('withCredentials' in xmlhttp) {
     xmlhttp.send();
 }
 
-function parseJSON(obj) {
+window.onload = function parseJSON(obj) {
     var display = document.getElementById("display");
+    var x;
     for (var i = 0; i < obj.length; i++) {
-        display.innerHTML += obj.forms[i];
+       x += "<div class='JSONexampleContainer'>";
+       x += "<h3>Name: " + obj.forms.name + "</h3>";
+       x += "<h3>Height: " + obj.forms.height + "</h3>";
+       x += "<h3>Weight: " + obj.forms.weight + "</h3>";
     }
+    x += "</div>";
+
+    display.innerHTML = x;
     console.log(obj);
 }
