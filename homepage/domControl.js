@@ -13,10 +13,10 @@ document.getElementById("appendChildBtn").onclick = function appendChild() {
         var newP = document.createElement("P");
         var newText = document.createTextNode("Here is our new p element.");
         newP.appendChild(newText);
-        if (!document.getElementById("addText").appendChild(newP)) {
-        document.getElementById("addText").appendChild(newP);
-        } else {
+        if (document.getElementById("addText").appendChild(newP)) {
             alert("The div element is full.");
+        } else {
+            document.getElementById("addText").appendChild(newP);
         }
     }    
     else {
