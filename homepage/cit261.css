@@ -384,14 +384,14 @@ div.dropDownMenu a:hover {
     background: thistle;
 }
 
-#rotate_45 {
+#rotate_45:active {
     transform: rotate(45deg);
 }
 
-#skewY_25 {
+#skewY_25:hover {
     transform: skewY(25deg);
 }
 
-#scaleX_3 {
+#scaleX_3:hover {
     transform: scaleX(3);
 }
