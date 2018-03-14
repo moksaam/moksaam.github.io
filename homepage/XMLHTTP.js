@@ -14,12 +14,12 @@ if ('withCredentials' in xmlhttp) {
 function parseJSON(obj) {
     var display = document.getElementById("display");
     var x;
-    for (i in obj) {
+    
        x += "<div class='JSONexampleContainer'>";
        x += "<h3>Name: " + obj.name + "</h3>";
        x += "<h3>Height: " + obj.height + "</h3>";
        x += "<h3>Weight: " + obj.weight + "</h3>";
-    }
+    
     x += "</div>";
 
     display.innerHTML = x;
