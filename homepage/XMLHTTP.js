@@ -14,6 +14,6 @@ if ('withCredentials' in xmlhttp) {
 function parseJSON(obj) {
     var display = document.getElementById("display");
     for (var i = 0; i < obj.length; i++) {
-        display += obj[i];
+        display.innerHTML += obj[i];
     }     
 }
