@@ -11,7 +11,7 @@ if ('withCredentials' in xmlhttp) {
     xmlhttp.send();
 }
 
-window.onload = function parseJSON(obj) {
+function parseJSON(obj) {
     var display = document.getElementById("display");
     var x;
     for (var i = 0; i < obj.length; i++) {
