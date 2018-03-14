@@ -400,3 +400,7 @@ div.dropDownMenu a:hover {
 #scaleY_5 {
     transform: scaleY(1.5);
 }
+
+.cssContainer {
+    display: inline-block;
+}
