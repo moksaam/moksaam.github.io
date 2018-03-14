@@ -396,3 +396,7 @@ div.dropDownMenu a:hover {
 #scaleX_3:hover {
     transform: scaleX(3);
 }
+
+#scaleY_5 {
+    transform: scaleY(5);
+}
