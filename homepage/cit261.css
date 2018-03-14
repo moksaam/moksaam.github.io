@@ -361,5 +361,6 @@ div.dropDownMenu a:hover {
     height: 50px;
     width: 50px;
     background-color: goldenrod;
+    border: solid 3px blueviolet;
 }
 
