@@ -350,9 +350,16 @@ div.dropDownMenu a:hover {
     background: black;
 }
 
+.domControlDivs {
+    display: inline-block;
+    background: palevioletred;
+    color: black;
+}
+
 .childDiv {
     display: inline-block;
     height: 50px;
     width: 50px;
     background-color: goldenrod;
 }
+
