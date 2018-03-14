@@ -16,9 +16,9 @@ function parseJSON(obj) {
     var x;
     for (var i = 0; i < obj.length; i++) {
        x += "<div class='JSONexampleContainer'>";
-       x += "<h3>Name: " + obj.forms.name + "</h3>";
-       x += "<h3>Height: " + obj.forms.height + "</h3>";
-       x += "<h3>Weight: " + obj.forms.weight + "</h3>";
+       x += "<h3>Name: " + obj.forms[i].name + "</h3>";
+       x += "<h3>Height: " + obj.forms[i].height + "</h3>";
+       x += "<h3>Weight: " + obj.forms[i].weight + "</h3>";
     }
     x += "</div>";
 
