@@ -382,6 +382,7 @@ div.dropDownMenu a:hover {
     height: 200px;
     width: 250px;
     background: thistle;
+    color: black;
 }
 
 #rotate_45:active {
