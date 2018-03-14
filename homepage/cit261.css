@@ -365,3 +365,9 @@ div.dropDownMenu a:hover {
     font-size: 8px;
 }
 
+.secondChildDiv {
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: blue;
+}
