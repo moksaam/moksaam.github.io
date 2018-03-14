@@ -21,3 +21,12 @@ function bodyDiv() {
     newDiv.className = "secondChildDiv";
     document.body.appendChild(newDiv);
 }
+
+document.getElementById("insertBeforeBtn").onclick = function insertBefore() {
+
+}
+
+document.getElementById("removeChildBtn").onclick = function removeChild() {
+    var deadDiv = document.getElementById("divContainer");
+    deadDiv.removeChild(deadDiv.childNodes[0]);
+}
