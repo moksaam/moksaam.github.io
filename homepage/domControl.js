@@ -5,20 +5,26 @@ document.getElementById("createElementBtn").onclick = function createElement() {
     newDiv.id = "addText";
     newDiv.className = "childDiv";
     document.getElementById("divContainer").appendChild(newDiv);
+    var created = 1;
+    return created;
 }
 
-document.getElementById("appendChildBtn").onclick = function appendChild() {
+document.getElementById("appendChildBtn").onclick = function appendChild(created) {
     var filled = 0;
-    var newP = document.createElement("P");
-    var newText = document.createTextNode("Here is our new p element.");
-    newP.appendChild(newText);
-    if (filled == 0) {
+    if (created == 1) {
+        var newP = document.createElement("P");
+        var newText = document.createTextNode("Here is our new p element.");
+        newP.appendChild(newText);
+        if (filled == 0) {
         document.getElementById("addText").appendChild(newP);
         filled = 1;
-    } else {
-        alert("The div element is full.");
-    }
-    
+        } else {
+            alert("The div element is full.");
+        }
+    }    
+    else {
+        alert("No Parent Div has been created yet.")
+    }  
     bodyDiv();
 }
 
