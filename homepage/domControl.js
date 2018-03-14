@@ -29,7 +29,8 @@ document.getElementById("insertBeforeBtn").onclick = function insertBefore() {
     document.body.insertBefore(firstDiv, currentDiv);
 }
 
+// Remove Divs
 document.getElementById("removeChildBtn").onclick = function removeChild() {
     var deadDiv = document.getElementById("divContainer");
-    deadDiv.removeChild(deadDiv.childNodes[0]);
+    deadDiv.removeChild(deadDiv.lastElementChild);
 }
