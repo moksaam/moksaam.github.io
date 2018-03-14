@@ -1,4 +1,3 @@
-var created;
 // Creating our functions to alter the DOM
 document.getElementById("createElementBtn").onclick = function createElement() {
     // Creating a new DIV
@@ -6,19 +5,16 @@ document.getElementById("createElementBtn").onclick = function createElement() {
     newDiv.id = "addText";
     newDiv.className = "childDiv";
     document.getElementById("divContainer").appendChild(newDiv);
-    
-    created = 1;
 }
 
-document.getElementById("appendChildBtn").onclick = function appendChild(created) {
-    var filled;
-    if (created == 1) {
+document.getElementById("appendChildBtn").onclick = function appendChild() {
+
+    if (document.getElementById("addText")) {
         var newP = document.createElement("P");
         var newText = document.createTextNode("Here is our new p element.");
         newP.appendChild(newText);
-        if (filled == 0) {
+        if (!document.getElementById("addText").appendChild(newP)) {
         document.getElementById("addText").appendChild(newP);
-        filled = 1;
         } else {
             alert("The div element is full.");
         }
