@@ -2,6 +2,6 @@
 document.getElementById("createElementBtn").onclick = function CreateElement() {
     // Creating a new DIV
     var newDiv = document.createElement("div");
-    newDiv.id = "exampleCSS";
+    newDiv.className = "childDiv";
     document.getElementById("divContainer").appendChild(newDiv);
 }

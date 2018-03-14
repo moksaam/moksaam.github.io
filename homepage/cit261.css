@@ -349,3 +349,10 @@ div.dropDownMenu a:hover {
     font-size: 2px;
     background: black;
 }
+
+.childDiv {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+}
