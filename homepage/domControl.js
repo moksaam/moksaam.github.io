@@ -11,7 +11,7 @@ document.getElementById("createElementBtn").onclick = function createElement() {
 
 document.getElementById("appendChildBtn").onclick = function appendChild(created) {
     var filled = 0;
-    if (created == 1) {
+    if (created) {
         var newP = document.createElement("P");
         var newText = document.createTextNode("Here is our new p element.");
         newP.appendChild(newText);
