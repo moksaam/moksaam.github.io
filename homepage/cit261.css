@@ -416,3 +416,17 @@ div.dropDownMenu a:hover {
     transition: 4s;
     margin-left: 50%;
 }
+
+.sqrBtn {
+    height: 100px;
+    width: 100px;
+    background-color: slateblue;
+}
+
+.sqrBtn.circleIt {
+    width: 500px;
+    height: 500px;
+    border-radius: 150px; 
+    transform: rotate(360deg);
+    background-color: royalblue;
+}
