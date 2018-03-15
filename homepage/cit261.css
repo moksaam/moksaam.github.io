@@ -404,3 +404,15 @@ div.dropDownMenu a:hover {
 .cssContainer {
     display: inline-block;
 }
+
+.left_to_right_box {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+}
+
+.left_to_right_box.moveLeft {
+    transition: 4s;
+    margin-left: 75%;
+}
