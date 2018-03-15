@@ -421,13 +421,13 @@ div.dropDownMenu a:hover {
     height: 100px;
     width: 100px;
     background-color: slateblue;
-    transition: width 3s, height 4s;
+    transition: width 3s, height 3s;
 }
 
 .square_to_circle.circleIt {
     width: 500px;
     height: 500px;
-    border-radius: 200px; 
+    border-radius: 300px; 
     transform: rotate(360deg);
     background-color: royalblue;
 }
