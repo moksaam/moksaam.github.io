@@ -1,16 +1,16 @@
 // Creating the code to move our box left to right
 // Creating variable for out div box
-var moveBox = document.getElementsByClassName("left_to_right_box");
+var moveBox = document.getElementsByClassName("left_to_right_box")[0];
 
-document.getElementsByClassName("playBtn").onclick = function moveBox() {
-    if (this.value === 'Play') {
-        this.value = 'Pause';
+document.getElementsByClassName("playBtn")[0].onclick = function moveBox() {
+    if (this.innerHTML === 'Play') {
+        this.innerHTML = 'Pause';
         moveBox.classList.add('moveLeft');
     } else {
-        this.value = 'Play';
+        this.innerHTML = 'Play';
         var computedStyle = window.getComputedStyle(moveBox),
-            leftSideMargin = computedStyle.getPropertyValue('margin-left');
-        moveBox.style.leftSideMargin = leftSideMargin;
+            marginLeft = computedStyle.getPropertyValue('margin-left');
+        moveBox.style.marginLeft = marginLeft;
         moveBox.classList.remove('moveLeft');
     }
 }
