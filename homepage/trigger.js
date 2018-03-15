@@ -16,6 +16,8 @@ document.getElementsByClassName("playBtn")[0].onclick = function boxMove() {
     }
 }
 
+// This function will transform a square to a circle, enlarge it, and change it's color
+// It will also then revert it back to it's original shape, size, and color.
 document.getElementsByClassName("sqrBtn")[0].onclick = function makeCircle() {
     if (this.innerHTML === 'Start') {
         this.innerHTML = 'Stop';
