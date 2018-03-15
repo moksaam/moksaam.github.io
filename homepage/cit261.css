@@ -417,13 +417,13 @@ div.dropDownMenu a:hover {
     margin-left: 50%;
 }
 
-.sqrBtn {
+.square_to_circle {
     height: 100px;
     width: 100px;
     background-color: slateblue;
 }
 
-.sqrBtn.circleIt {
+.square_to_circle.circleIt {
     width: 500px;
     height: 500px;
     border-radius: 150px; 
