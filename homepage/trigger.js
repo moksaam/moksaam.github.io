@@ -2,7 +2,7 @@
 // Creating variable for out div box
 var moveBox = document.getElementsByClassName("left_to_right_box")[0];
 
-document.getElementsByClassName("playBtn")[0].onclick = function moveBox() {
+document.getElementsByClassName("playBtn")[0].onclick = function boxMove() {
     if (this.innerHTML === 'Play') {
         this.innerHTML = 'Pause';
         moveBox.classList.add('moveLeft');
